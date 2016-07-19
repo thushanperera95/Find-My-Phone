@@ -1,0 +1,5 @@
+CHANGED,D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\thunderboltsoft\ringmyphone\R$style$override.class
+CHANGED,D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\thunderboltsoft\ringmyphone\R$styleable$override.class
+CHANGED,D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\v7\appcompat\R$style$override.class
+CHANGED,D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\design\R$style$override.class
