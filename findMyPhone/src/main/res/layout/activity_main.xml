@@ -21,8 +21,7 @@
         <android.support.design.widget.TextInputLayout
             android:id="@+id/input_layout_password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:hintTextAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+            android:layout_height="wrap_content">
 
             <EditText
                 android:id="@+id/command"

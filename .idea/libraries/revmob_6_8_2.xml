@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="revmob-6.8.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/findMyPhone/libs/revmob-6.8.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

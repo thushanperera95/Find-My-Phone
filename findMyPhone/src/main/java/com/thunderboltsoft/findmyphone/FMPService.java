@@ -167,7 +167,7 @@ public class FMPService extends Service {
 
         // Priority is set high so that the incoming SMS is not "hijacked" by
         // other SMS clients
-        theFilter.setPriority(999);
+        theFilter.setPriority(Integer.MAX_VALUE);
 
         // Registers the receiver for use by the application
         this.registerReceiver(this.yourReceiver, theFilter);
