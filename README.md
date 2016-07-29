@@ -1,4 +1,6 @@
-# Find My Phone
+# Find My Phone 
+<a href='https://play.google.com/store/apps/details?id=com.thunderboltsoft.ringmyphone&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' height="80" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+
 Find My Phone is an open source Android app which allows users to to easily locate their phone (even it was set to silent) with a text message sent from another phone. This text message will be a passcode that the user sets in the target phone. The target phone will listen to this passcode, then ring the default ringtone at max volume, flash camera light and vibrate until the user finds it. If the user is unable to find the phone within 5 minutes, the phone will turn off the ringtone, camera light flash and vibrate in order to conserve battery.
 
 ### Developers
