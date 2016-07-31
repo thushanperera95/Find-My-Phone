@@ -41,24 +41,24 @@ ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManif
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:12:9-58
 application
 ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:15:5-41:19
-MERGED from [com.android.support:appcompat-v7:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.0\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.0\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:design:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\design\24.1.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.0\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.0\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\design\24.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:18:9-41
 	android:allowBackup
@@ -85,10 +85,10 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:28:17-77
 	android:name
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:28:27-74
-receiver#com.thunderboltsoft.ringmyphone.FMPService.yourReceiver
+receiver#com.thunderboltsoft.findmyphone.FMPService$MyReceiver
 ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:32:9-36:20
 	android:name
-		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:32:19-58
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:32:19-87
 intent-filter#android.provider.Telephony.SMS_RECEIVED
 ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:33:13-35:29
 action#android.provider.Telephony.SMS_RECEIVED
@@ -103,27 +103,27 @@ ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManif
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:39:13-70
 uses-sdk
 INJECTED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.0\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-vector-drawable:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.0\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:design:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\design\24.1.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.0\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.0\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-vector-drawable:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.0\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:recyclerview-v7:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.1.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:appcompat-v7:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-vector-drawable:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:design:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\design\24.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:recyclerview-v7:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:appcompat-v7:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-vector-drawable:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\AndroidManifest.xml:21:5-23:54
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:24.1.0] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.0\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:24.1.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml
 		INJECTED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml

@@ -47,12 +47,11 @@ import android.telephony.SmsManager;
 import android.telephony.SmsMessage;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.thunderboltsoft.ringmyphone.R;
 
 public class FMPService extends Service {
-
-	private String coords;
 
 	/*
 	 * This is 5 minutes in nanoseconds
@@ -105,49 +104,51 @@ public class FMPService extends Service {
 	 */
 	private static final String ACTION = "android.provider.Telephony.SMS_RECEIVED";
 
+	// use this as an inner class like here or as a top-level class
+    public class MyReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            // do something
+            Bundle bundle;
+            Object[] pdusObj;
+            SmsMessage[] messages;
+            String message;
+            String messAddr;
+
+            // Bundles are used to pass data from a intent for proper use
+            bundle = intent.getExtras();
+
+            if (bundle != null) {
+
+                // Gets the PDUs from the bundle
+                // PDU is a protocol description unit and is used for sms
+                // messages
+                pdusObj = (Object[]) bundle.get("pdus");
+
+                // Creates array of sms messages
+                messages = new SmsMessage[pdusObj.length];
+
+                // Fills up the sms array by extracting from the pdu
+                for (int i = 0; i < pdusObj.length; i++) {
+                    messages[i] = SmsMessage.createFromPdu((byte[]) pdusObj[i]);
+                }
+
+                // Goes through all the SMSs one by one
+                for (SmsMessage currentMessage : messages) {
+                    messAddr = currentMessage.getOriginatingAddress();
+                    message = currentMessage.getDisplayMessageBody();
+
+                    messageReceived(message, messAddr, context);
+                }
+            }
+        }
+    }
+
 	/*
 	 * Used to listen onto incoming sms
 	 */
-	private BroadcastReceiver yourReceiver = new BroadcastReceiver() {
-
-		@Override
-		public void onReceive(Context context, Intent intent) {
-
-			Bundle bundle;
-			Object[] pdusObj;
-			SmsMessage[] messages;
-			String message;
-			String messAddr;
-
-			// Bundles are used to pass data from a intent for proper use
-			bundle = intent.getExtras();
-
-			if (bundle != null) {
-
-				// Gets the PDUs from the bundle
-				// PDU is a protocol description unit and is used for sms
-				// messages
-				pdusObj = (Object[]) bundle.get("pdus");
-
-				// Creates array of sms messages
-				messages = new SmsMessage[pdusObj.length];
-
-				// Fills up the sms array by extracting from the pdu
-				for (int i = 0; i < pdusObj.length; i++) {
-					messages[i] = SmsMessage.createFromPdu((byte[]) pdusObj[i]);
-				}
-
-				// Goes through all the SMSs one by one
-				for (SmsMessage currentMessage : messages) {
-					messAddr = currentMessage.getOriginatingAddress();
-					message = currentMessage.getDisplayMessageBody();
-
-					messageReceived(message, messAddr, context);
-				}
-			}
-		}
-	};
-	;
+	public BroadcastReceiver yourReceiver;
 
 	@Override
 	public IBinder onBind(Intent arg0) {
@@ -160,6 +161,10 @@ public class FMPService extends Service {
 	public void onCreate() {
 		super.onCreate();
 
+		Log.v("CHECK", "INside onCreate");
+
+		yourReceiver = new MyReceiver();
+
 		Notification note;
 
         // adds filters to filter out everything except incoming sms
@@ -167,7 +172,7 @@ public class FMPService extends Service {
 
         // Priority is set high so that the incoming SMS is not "hijacked" by
         // other SMS clients
-        theFilter.setPriority(Integer.MAX_VALUE);
+        theFilter.setPriority(1000);
 
         // Registers the receiver for use by the application
         this.registerReceiver(this.yourReceiver, theFilter);
@@ -213,12 +218,16 @@ public class FMPService extends Service {
 	protected void messageReceived(String message, String messAddr, Context context) {
 		String commandReceived = message.toLowerCase(Locale.getDefault());
 
+		Log.v("CHECK", "INside messageReceived");
+
 		// Checks if the received sms is the command word
 		if (commandReceived.equals(command)) {
 
-			SmsManager sms = SmsManager.getDefault();
+			Toast.makeText(getApplicationContext(), "Test", Toast.LENGTH_SHORT).show();
 
-			sms.sendTextMessage(messAddr, null, coords, null, null);
+//			SmsManager sms = SmsManager.getDefault();
+//
+//			sms.sendTextMessage(messAddr, null, coords, null, null);
 
 			// Starts ringing the default ring tone and maximum volume
 			startRingMyPhone(context);
@@ -227,10 +236,10 @@ public class FMPService extends Service {
 				stopRingMyPhone();
 			}
 		}
-
-		// TODO Need to check if this is needed
-		this.unregisterReceiver(this.yourReceiver);
-		this.registerReceiver(this.yourReceiver, theFilter);
+//
+//		// TODO Need to check if this is needed
+//		this.unregisterReceiver(this.yourReceiver);
+//		this.registerReceiver(this.yourReceiver, theFilter);
 	}
 
 	/*
