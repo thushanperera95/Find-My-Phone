@@ -105,50 +105,53 @@ public class FMPService extends Service {
 	private static final String ACTION = "android.provider.Telephony.SMS_RECEIVED";
 
 	// use this as an inner class like here or as a top-level class
-    public class MyReceiver extends BroadcastReceiver {
 
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            // do something
-            Bundle bundle;
-            Object[] pdusObj;
-            SmsMessage[] messages;
-            String message;
-            String messAddr;
-
-            // Bundles are used to pass data from a intent for proper use
-            bundle = intent.getExtras();
-
-            if (bundle != null) {
-
-                // Gets the PDUs from the bundle
-                // PDU is a protocol description unit and is used for sms
-                // messages
-                pdusObj = (Object[]) bundle.get("pdus");
-
-                // Creates array of sms messages
-                messages = new SmsMessage[pdusObj.length];
-
-                // Fills up the sms array by extracting from the pdu
-                for (int i = 0; i < pdusObj.length; i++) {
-                    messages[i] = SmsMessage.createFromPdu((byte[]) pdusObj[i]);
-                }
-
-                // Goes through all the SMSs one by one
-                for (SmsMessage currentMessage : messages) {
-                    messAddr = currentMessage.getOriginatingAddress();
-                    message = currentMessage.getDisplayMessageBody();
-
-                    messageReceived(message, messAddr, context);
-                }
-            }
-        }
-    }
 
 	/*
 	 * Used to listen onto incoming sms
 	 */
-	public BroadcastReceiver yourReceiver;
+	public BroadcastReceiver yourReceiver = new BroadcastReceiver() {
+
+		@Override
+		public void onReceive(Context context, Intent intent) {
+
+			Bundle bundle;
+			Object[] pdusObj;
+			SmsMessage[] messages;
+			String message;
+			String messAddr;
+
+			// Bundles are used to pass data from a intent for proper use
+			bundle = intent.getExtras();
+
+			if (bundle != null) {
+
+				// Gets the PDUs from the bundle
+				// PDU is a protocol description unit and is used for sms
+				// messages
+				pdusObj = (Object[]) bundle.get("pdus");
+
+				// Creates array of sms messages
+				messages = new SmsMessage[pdusObj.length];
+
+				// Fills up the sms array by extracting from the pdu
+				for (int i = 0; i < pdusObj.length; i++) {
+					messages[i] = SmsMessage.createFromPdu((byte[]) pdusObj[i]);
+				}
+
+				// Goes through all the SMSs one by one
+				for (SmsMessage currentMessage : messages) {
+					messAddr = currentMessage.getOriginatingAddress();
+					message = currentMessage.getDisplayMessageBody();
+
+					messageReceived(message, messAddr, context);
+				}
+			}
+		}
+	};
+
+	public FMPService() {}
+
 
 	@Override
 	public IBinder onBind(Intent arg0) {
@@ -163,7 +166,7 @@ public class FMPService extends Service {
 
 		Log.v("CHECK", "INside onCreate");
 
-		yourReceiver = new MyReceiver();
+//		yourReceiver = new MyReceiver(this);
 
 		Notification note;
 
@@ -238,8 +241,8 @@ public class FMPService extends Service {
 		}
 //
 //		// TODO Need to check if this is needed
-//		this.unregisterReceiver(this.yourReceiver);
-//		this.registerReceiver(this.yourReceiver, theFilter);
+		this.unregisterReceiver(this.yourReceiver);
+		this.registerReceiver(this.yourReceiver, theFilter);
 	}
 
 	/*
