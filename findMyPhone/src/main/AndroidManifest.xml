@@ -17,11 +17,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/MyMaterialTheme">
-
         <activity
-            android:name="com.thunderboltsoft.findmyphone.FMPActivity"
+            android:name="com.thunderboltsoft.findmyphone.activites.FMPActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,8 +29,12 @@
         </activity>
 
         <service
-            android:name="com.thunderboltsoft.findmyphone.FMPService"
+            android:name="com.thunderboltsoft.findmyphone.services.FMPService"
             android:enabled="true" />
+
+        <activity
+            android:name="com.thunderboltsoft.findmyphone.activites.SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
     </application>
 
 </manifest>

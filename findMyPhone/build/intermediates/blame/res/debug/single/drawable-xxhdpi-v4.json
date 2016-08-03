@@ -24,6 +24,10 @@
         "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_info_black_24dp.png",
+        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\src\\main\\res\\drawable-xxhdpi\\ic_info_black_24dp.png"
+    },
+    {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
         "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
@@ -96,6 +100,10 @@
         "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_settings_white_24dp.png",
+        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_settings_white_24dp.png"
+    },
+    {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
         "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
@@ -140,6 +148,10 @@
         "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_sync_black_24dp.png",
+        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\src\\main\\res\\drawable-xxhdpi\\ic_sync_black_24dp.png"
+    },
+    {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png",
         "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
@@ -154,6 +166,10 @@
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png",
         "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_notifications_black_24dp.png",
+        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\src\\main\\res\\drawable-xxhdpi\\ic_notifications_black_24dp.png"
     },
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",

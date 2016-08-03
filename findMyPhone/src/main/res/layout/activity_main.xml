@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.thunderboltsoft.findmyphone.FMPActivity">
+    tools:context="com.thunderboltsoft.findmyphone.activites.FMPActivity">
 
     <include layout="@layout/toolbar" />
 

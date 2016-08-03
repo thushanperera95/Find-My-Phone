@@ -9,4 +9,11 @@
         android:icon="@drawable/ic_info_outline"
         android:title="@string/action_settings"/>
 
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="90"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_info_outline"
+        android:title="@string/action_settings"/>
+
 </menu>

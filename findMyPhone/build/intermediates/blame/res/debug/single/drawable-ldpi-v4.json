@@ -2,5 +2,9 @@
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_info_outline.png",
         "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_info_outline.png"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_settings_white_24dp.png",
+        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_settings_white_24dp.png"
     }
 ]
