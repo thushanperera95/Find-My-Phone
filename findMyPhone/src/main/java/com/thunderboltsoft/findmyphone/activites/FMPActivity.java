@@ -34,11 +34,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.revmob.RevMob;
+import com.revmob.RevMobAdsListener;
 import com.revmob.ads.banner.RevMobBanner;
 import com.thunderboltsoft.findmyphone.services.FMPService;
 import com.thunderboltsoft.ringmyphone.R;
 
-@SuppressWarnings("unused")
 public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
     // RevMob instance
@@ -81,12 +81,12 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
             sActionBar.setIcon(R.mipmap.ic_launcher);
         }
 
-//        mRevmob = RevMob.startWithListener(this, new RevMobAdsListener() {
-//            @Override
-//            public void onRevMobSessionIsStarted() {
-//                showAdBanner();
-//            }
-//        }, "53140b72bc653cfa52882e01");
+        mRevmob = RevMob.startWithListener(this, new RevMobAdsListener() {
+            @Override
+            public void onRevMobSessionIsStarted() {
+                showAdBanner();
+            }
+        }, "53140b72bc653cfa52882e01");
 
         // Opens a file called "PREFERENCES" that can only be used by our
         // application in order to store data such as settings

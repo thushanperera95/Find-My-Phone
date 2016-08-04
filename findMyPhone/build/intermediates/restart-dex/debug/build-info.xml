@@ -4,29 +4,34 @@
     api-level="23"
     density="xxxhdpi"
     format="7"
-    timestamp="11117818997609"
+    timestamp="92298552620137"
     token="8346677982688629830" >
 
     <task
         name="javac"
-        duration="871" />
+        duration="211" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="707" />
+        duration="41" />
     <task
         name="verifier"
-        duration="165" />
+        duration="3" />
 
     <artifact
-        location="D:\Development\Projects\FindMyPhone\findMyPhone\build\outputs\apk\findMyPhone-debug.apk"
-        type="MAIN" />
+        location="D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
+        type="DEX" />
 
-    <build timestamp="148497245660676" >
+    <build timestamp="92071123367899" >
         <artifact
-            location="D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            location="D:\Development\Projects\FindMyPhone\findMyPhone\build\outputs\apk\findMyPhone-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="92298552620137" >
+        <artifact
+            location="D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
             type="DEX" />
     </build>
 
