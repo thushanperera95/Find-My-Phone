@@ -32,12 +32,12 @@
         "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
-        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_notifications_black_24dp.png",
         "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\src\\main\\res\\drawable-xxxhdpi\\ic_notifications_black_24dp.png"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_info_outline.png",
