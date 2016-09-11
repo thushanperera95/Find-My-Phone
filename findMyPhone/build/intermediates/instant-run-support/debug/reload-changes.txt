@@ -1,2 +1,0 @@
-CHANGED,D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\thunderboltsoft\findmyphone\activites\SettingsActivity$override.class
-CHANGED,D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

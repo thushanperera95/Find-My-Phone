@@ -12,6 +12,7 @@
 
 package com.thunderboltsoft.findmyphone.activites;
 
+import android.Manifest;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.app.AlertDialog;
@@ -19,7 +20,10 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -31,6 +35,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.revmob.RevMob;
@@ -61,15 +66,20 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
     // Stores the reference to the app's shared preferences instance
     private SharedPreferences mPreferences;
 
+    private TextView mTxtStatus;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        checkPermissions();
+
         mBtnStop = (Button) findViewById(R.id.stop_button);
         mBtnStart = (Button) findViewById(R.id.start_button);
         mBtnSet = (Button) findViewById(R.id.set_button);
         mEditTxtFindPassword = (EditText) findViewById(R.id.command);
+        mTxtStatus = (TextView) findViewById(R.id.txtStatus);
 
         Toolbar myToolBar = (Toolbar) findViewById(R.id.toolbar);
 
@@ -97,6 +107,95 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         setUpListeners();
     }
 
+    public void checkPermissions() {
+        ActivityCompat.requestPermissions(this,
+                new String[]{Manifest.permission.RECEIVE_SMS},
+                1);
+        ActivityCompat.requestPermissions(this,
+                new String[]{Manifest.permission.CAMERA},
+                2);
+        ActivityCompat.requestPermissions(this,
+                new String[]{Manifest.permission.INTERNET},
+                3);
+        ActivityCompat.requestPermissions(this,
+                new String[]{Manifest.permission.SEND_SMS},
+                4);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case 1: {
+
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    // permission was granted, yay! Do the
+                    // contacts-related task you need to do.
+                } else {
+
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                    Toast.makeText(this, "Permission denied to read your External storage", Toast.LENGTH_SHORT).show();
+                }
+                return;
+            }
+            case 2: {
+
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    // permission was granted, yay! Do the
+                    // contacts-related task you need to do.
+                } else {
+
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                    Toast.makeText(this, "Permission denied to read your External storage", Toast.LENGTH_SHORT).show();
+                }
+                return;
+            }
+            case 3: {
+
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    // permission was granted, yay! Do the
+                    // contacts-related task you need to do.
+                } else {
+
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                    Toast.makeText(this, "Permission denied to read your External storage", Toast.LENGTH_SHORT).show();
+                }
+                return;
+            }
+
+            case 4: {
+
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    // permission was granted, yay! Do the
+                    // contacts-related task you need to do.
+                } else {
+
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                    Toast.makeText(this, "Permission denied to read your External storage", Toast.LENGTH_SHORT).show();
+                }
+                return;
+            }
+            // other 'case' lines to check for other
+            // permissions this app might request
+        }
+    }
+
     @Override
     public void onClick(View v) {
 
@@ -121,6 +220,8 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
                     mBtnStart.setVisibility(View.VISIBLE);
                     mBtnStop.setVisibility(View.INVISIBLE);
                 }
+
+                mTxtStatus.setText("STOPPED");
                 break;
 
             case R.id.start_button:
@@ -130,6 +231,7 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
                     mBtnStop.setVisibility(View.VISIBLE);
                     mBtnStart.setVisibility(View.INVISIBLE);
                 }
+                mTxtStatus.setText("RUNNING");
                 break;
         }
     }
@@ -146,10 +248,10 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
             case R.id.action_info:
                 showHowtoDialog();
                 return true;
-            case R.id.action_settings:
-                Intent i = new Intent(getBaseContext(), SettingsActivity.class);
-                startActivity(i);
-                return true;
+//            case R.id.action_settings:
+//                Intent i = new Intent(getBaseContext(), SettingsActivity.class);
+//                startActivity(i);
+//                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

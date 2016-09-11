@@ -5,8 +5,8 @@ android {
     buildToolsVersion "24.0.0"
     defaultConfig {
         applicationId "com.thunderboltsoft.ringmyphone"
-        minSdkVersion 8
-        targetSdkVersion 22
+        minSdkVersion 9
+        targetSdkVersion 24
         versionCode 1
         versionName '2.0.0'
     }
@@ -22,8 +22,8 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile files('libs/revmob-6.8.2.jar')
-    compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'com.android.support:design:24.1.1'
-    compile 'com.android.support:support-v4:24.1.1'
+    compile files('libs/revmob.jar')
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.android.support:support-v4:24.2.0'
 }
