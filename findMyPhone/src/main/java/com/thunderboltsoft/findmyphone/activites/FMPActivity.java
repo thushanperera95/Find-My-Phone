@@ -44,6 +44,9 @@ import com.revmob.ads.banner.RevMobBanner;
 import com.thunderboltsoft.findmyphone.services.FMPService;
 import com.thunderboltsoft.ringmyphone.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
     // RevMob instance
@@ -68,12 +71,30 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
     private TextView mTxtStatus;
 
+    private Boolean PERMISSION_CAMERA_APPROVED = false;
+    private Boolean PERMISSION_RECEIVE_SMS_APPROVED = false;
+    private Boolean PERMISSION_FLASHLIGHT_APPROVED = false;
+    private Boolean PERMISSION_SEND_SMS_APPROVED = false;
+
+    public static final int MULTIPLE_PERMISSIONS = 10; // code you want.
+
+    String[] permissions = new String[] {
+            Manifest.permission.RECEIVE_SMS,
+            Manifest.permission.SEND_SMS,
+            Manifest.permission.CAMERA,
+            Manifest.permission.INTERNET
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        checkPermissions();
+        if (checkPermissions()) {
+            // permissions granted.
+        } else {
+            // show dialog informing them that we lack certain permissions
+        }
 
         mBtnStop = (Button) findViewById(R.id.stop_button);
         mBtnStart = (Button) findViewById(R.id.start_button);
@@ -91,12 +112,12 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
             sActionBar.setIcon(R.mipmap.ic_launcher);
         }
 
-        mRevmob = RevMob.startWithListener(this, new RevMobAdsListener() {
-            @Override
-            public void onRevMobSessionIsStarted() {
-                showAdBanner();
-            }
-        }, "53140b72bc653cfa52882e01");
+//        mRevmob = RevMob.startWithListener(this, new RevMobAdsListener()) {
+//            @Override
+//            public void onRevMobSessionIsStarted() {
+//                showAdBanner();
+//            }
+//        }, "53140b72bc653cfa52882e01");
 
         // Opens a file called "PREFERENCES" that can only be used by our
         // application in order to store data such as settings
@@ -107,92 +128,34 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         setUpListeners();
     }
 
-    public void checkPermissions() {
-        ActivityCompat.requestPermissions(this,
-                new String[]{Manifest.permission.RECEIVE_SMS},
-                1);
-        ActivityCompat.requestPermissions(this,
-                new String[]{Manifest.permission.CAMERA},
-                2);
-        ActivityCompat.requestPermissions(this,
-                new String[]{Manifest.permission.INTERNET},
-                3);
-        ActivityCompat.requestPermissions(this,
-                new String[]{Manifest.permission.SEND_SMS},
-                4);
+
+    private boolean checkPermissions() {
+        int result;
+        List<String> listPermissionsNeeded = new ArrayList<>();
+        for (String p:permissions) {
+            result = ContextCompat.checkSelfPermission(this,p);
+            if (result != PackageManager.PERMISSION_GRANTED) {
+                listPermissionsNeeded.add(p);
+            }
+        }
+        if (!listPermissionsNeeded.isEmpty()) {
+            ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), MULTIPLE_PERMISSIONS);
+            return false;
+        }
+        return true;
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           String permissions[], int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         switch (requestCode) {
-            case 1: {
-
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                    // permission was granted, yay! Do the
-                    // contacts-related task you need to do.
+            case MULTIPLE_PERMISSIONS:{
+                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                    // permissions granted.
                 } else {
-
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
-                    Toast.makeText(this, "Permission denied to read your External storage", Toast.LENGTH_SHORT).show();
+                    // no permissions granted.
                 }
                 return;
             }
-            case 2: {
-
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                    // permission was granted, yay! Do the
-                    // contacts-related task you need to do.
-                } else {
-
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
-                    Toast.makeText(this, "Permission denied to read your External storage", Toast.LENGTH_SHORT).show();
-                }
-                return;
-            }
-            case 3: {
-
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                    // permission was granted, yay! Do the
-                    // contacts-related task you need to do.
-                } else {
-
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
-                    Toast.makeText(this, "Permission denied to read your External storage", Toast.LENGTH_SHORT).show();
-                }
-                return;
-            }
-
-            case 4: {
-
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                    // permission was granted, yay! Do the
-                    // contacts-related task you need to do.
-                } else {
-
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
-                    Toast.makeText(this, "Permission denied to read your External storage", Toast.LENGTH_SHORT).show();
-                }
-                return;
-            }
-            // other 'case' lines to check for other
-            // permissions this app might request
         }
     }
 
@@ -285,7 +248,7 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         mFindPassword = mEditTxtFindPassword.getText().toString();
 
         // Saves the mFindPassword by writing it to the PREFERENCES file
-        mPreferences.edit().putString("command", mFindPassword).commit();
+        mPreferences.edit().putString("command", mFindPassword).apply();
     }
 
     /**
