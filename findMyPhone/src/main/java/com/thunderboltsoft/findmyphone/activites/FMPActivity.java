@@ -78,11 +78,18 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
     public static final int MULTIPLE_PERMISSIONS = 10; // code you want.
 
-    String[] permissions = new String[] {
+    String[] permissionsList = new String[]{
             Manifest.permission.RECEIVE_SMS,
             Manifest.permission.SEND_SMS,
             Manifest.permission.CAMERA,
             Manifest.permission.INTERNET
+    };
+
+    Boolean[] permissionsResults = new Boolean[]{
+            true,
+            true,
+            true,
+            true
     };
 
     @Override
@@ -132,8 +139,8 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
     private boolean checkPermissions() {
         int result;
         List<String> listPermissionsNeeded = new ArrayList<>();
-        for (String p:permissions) {
-            result = ContextCompat.checkSelfPermission(this,p);
+        for (String p : permissionsList) {
+            result = ContextCompat.checkSelfPermission(this, p);
             if (result != PackageManager.PERMISSION_GRANTED) {
                 listPermissionsNeeded.add(p);
             }
@@ -148,14 +155,14 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         switch (requestCode) {
-            case MULTIPLE_PERMISSIONS:{
-                if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
-                    // permissions granted.
-                } else {
-                    // no permissions granted.
+            case MULTIPLE_PERMISSIONS: {
+                for (int i = 0; i < permissionsList.length; i++) {
+                    permissionsResults[i] = ContextCompat.checkSelfPermission(this, permissionsList[i]) != PackageManager.PERMISSION_DENIED;
                 }
-                return;
             }
+
+            stopService(new Intent(this, FMPService.class));
+            startFMPService();
         }
     }
 
@@ -230,6 +237,7 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
         serviceIntent = new Intent(this, FMPService.class);
         serviceIntent.putExtra("command", mFindPassword); // Add mFindPassword keyword info
+        serviceIntent.putExtra("permissions_results", permissionsResults);
         // to the service intent
 
         if (isMyServiceRunning()) { // Check if still running, true = stop
