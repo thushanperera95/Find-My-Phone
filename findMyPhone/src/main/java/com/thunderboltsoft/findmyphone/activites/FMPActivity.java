@@ -154,6 +154,20 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
                 for (int i = 0; i < permissionsList.length; i++) {
                     permissionsResults[i] = ContextCompat.checkSelfPermission(this, permissionsList[i]) != PackageManager.PERMISSION_DENIED;
                 }
+
+                while ( (!permissionsResults[0]) || (!permissionsResults[1]) ) {
+                    List<String> listPermissionsNeeded = new ArrayList<>();
+
+                    if (ContextCompat.checkSelfPermission(this, permissionsList[0]) != PackageManager.PERMISSION_GRANTED) {
+                        listPermissionsNeeded.add(permissionsList[0]);
+                    }
+
+                    if (ContextCompat.checkSelfPermission(this, permissionsList[1]) != PackageManager.PERMISSION_GRANTED) {
+                        listPermissionsNeeded.add(permissionsList[1]);
+                    }
+
+                    ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), 007);
+                }
             }
 
             stopService(new Intent(this, FMPService.class));
