@@ -72,6 +72,7 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
     private TextView mTxtStatus;
 
     public static final int MULTIPLE_PERMISSIONS = 10; // code you want.
+    public static final int SMS_PERMISSIONS = 11;
 
     String[] permissionsList = new String[]{
             Manifest.permission.RECEIVE_SMS,
@@ -156,6 +157,11 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
                 }
 
                 while ( (!permissionsResults[0]) || (!permissionsResults[1]) ) {
+                    new AlertDialog.Builder(this)
+                            .setTitle("Heads Up")
+                            .setMessage("This app need the send and receive sms permission in order to listen to the 'Find My Phone' command")
+                            .show();
+
                     List<String> listPermissionsNeeded = new ArrayList<>();
 
                     if (ContextCompat.checkSelfPermission(this, permissionsList[0]) != PackageManager.PERMISSION_GRANTED) {
@@ -166,7 +172,36 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
                         listPermissionsNeeded.add(permissionsList[1]);
                     }
 
-                    ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), 007);
+                    ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), SMS_PERMISSIONS);
+                }
+            }
+
+            case SMS_PERMISSIONS: {
+                if (ContextCompat.checkSelfPermission(this, permissionsList[0]) == PackageManager.PERMISSION_GRANTED) {
+                    permissionsResults[0] = true;
+                }
+
+                if (ContextCompat.checkSelfPermission(this, permissionsList[1]) == PackageManager.PERMISSION_GRANTED) {
+                    permissionsResults[1] = true;
+                }
+
+                while ( (!permissionsResults[0]) || (!permissionsResults[1]) ) {
+                    new AlertDialog.Builder(this)
+                            .setTitle("Heads Up")
+                            .setMessage("This app need the send and receive sms permission in order to listen to the 'Find My Phone' command")
+                            .show();
+
+                    List<String> listPermissionsNeeded = new ArrayList<>();
+
+                    if (ContextCompat.checkSelfPermission(this, permissionsList[0]) != PackageManager.PERMISSION_GRANTED) {
+                        listPermissionsNeeded.add(permissionsList[0]);
+                    }
+
+                    if (ContextCompat.checkSelfPermission(this, permissionsList[1]) != PackageManager.PERMISSION_GRANTED) {
+                        listPermissionsNeeded.add(permissionsList[1]);
+                    }
+
+                    ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), SMS_PERMISSIONS);
                 }
             }
 
