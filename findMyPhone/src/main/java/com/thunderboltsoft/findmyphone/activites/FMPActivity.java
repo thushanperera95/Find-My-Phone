@@ -71,11 +71,6 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
     private TextView mTxtStatus;
 
-    private Boolean PERMISSION_CAMERA_APPROVED = false;
-    private Boolean PERMISSION_RECEIVE_SMS_APPROVED = false;
-    private Boolean PERMISSION_FLASHLIGHT_APPROVED = false;
-    private Boolean PERMISSION_SEND_SMS_APPROVED = false;
-
     public static final int MULTIPLE_PERMISSIONS = 10; // code you want.
 
     String[] permissionsList = new String[]{
@@ -85,7 +80,7 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
             Manifest.permission.INTERNET
     };
 
-    Boolean[] permissionsResults = new Boolean[]{
+    boolean[] permissionsResults = new boolean[]{
             true,
             true,
             true,

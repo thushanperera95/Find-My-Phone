@@ -100,6 +100,10 @@ public class FMPService extends Service {
 	// use this as an inner class like here or as a top-level class
 
 
+	private Boolean PERMISSION_RECEIVE_SMS_APPROVED = false;
+	private Boolean PERMISSION_SEND_SMS_APPROVED = false;
+	private Boolean PERMISSION_CAMERA_APPROVED = false;
+
 	/*
 	 * Used to listen onto incoming sms
 	 */
@@ -200,6 +204,18 @@ public class FMPService extends Service {
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		command = intent.getExtras().getString("command");
 
+		boolean[] permissionsResult = intent.getExtras().getBooleanArray("permissions_results");
+
+		assert permissionsResult != null;
+		if ( (!permissionsResult[0] || !permissionsResult[1]) ) {
+			PERMISSION_RECEIVE_SMS_APPROVED = false;
+			PERMISSION_SEND_SMS_APPROVED = false;
+		}
+
+		if (!permissionsResult[2]) {
+			PERMISSION_CAMERA_APPROVED = false;
+		}
+
 		return START_REDELIVER_INTENT;
 	}
 
@@ -228,9 +244,12 @@ public class FMPService extends Service {
 			// Starts ringing the default ring tone and maximum volume
 			startRingMyPhone(context);
 
-			if (!startFlashLight(context)) {    // If flashlight not supported then stop ringing
-				stopRingMyPhone();
+			if (PERMISSION_CAMERA_APPROVED) {
+				if (!startFlashLight(context)) {    // If flashlight not supported then stop ringing
+					stopRingMyPhone();
+				}
 			}
+
 		}
 //
 //		// TODO Need to check if this is needed
