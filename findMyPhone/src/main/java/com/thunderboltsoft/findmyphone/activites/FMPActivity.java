@@ -93,11 +93,11 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (checkPermissions()) {
-            // permissions granted.
-        } else {
-            // show dialog informing them that we lack certain permissions
-        }
+//        if (checkPermissions()) {
+//            // permissions granted.
+//        } else {
+//            // show dialog informing them that we lack certain permissions
+//        }
 
         mBtnStop = (Button) findViewById(R.id.stop_button);
         mBtnStart = (Button) findViewById(R.id.start_button);
@@ -132,83 +132,83 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
     }
 
 
-    private boolean checkPermissions() {
-        int result;
-        List<String> listPermissionsNeeded = new ArrayList<>();
-        for (String p : permissionsList) {
-            result = ContextCompat.checkSelfPermission(this, p);
-            if (result != PackageManager.PERMISSION_GRANTED) {
-                listPermissionsNeeded.add(p);
-            }
-        }
-        if (!listPermissionsNeeded.isEmpty()) {
-            ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), MULTIPLE_PERMISSIONS);
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case MULTIPLE_PERMISSIONS: {
-                for (int i = 0; i < permissionsList.length; i++) {
-                    permissionsResults[i] = ContextCompat.checkSelfPermission(this, permissionsList[i]) != PackageManager.PERMISSION_DENIED;
-                }
-
-                while ( (!permissionsResults[0]) || (!permissionsResults[1]) ) {
-                    new AlertDialog.Builder(this)
-                            .setTitle("Heads Up")
-                            .setMessage("This app need the send and receive sms permission in order to listen to the 'Find My Phone' command")
-                            .show();
-
-                    List<String> listPermissionsNeeded = new ArrayList<>();
-
-                    if (ContextCompat.checkSelfPermission(this, permissionsList[0]) != PackageManager.PERMISSION_GRANTED) {
-                        listPermissionsNeeded.add(permissionsList[0]);
-                    }
-
-                    if (ContextCompat.checkSelfPermission(this, permissionsList[1]) != PackageManager.PERMISSION_GRANTED) {
-                        listPermissionsNeeded.add(permissionsList[1]);
-                    }
-
-                    ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), SMS_PERMISSIONS);
-                }
-            }
-
-            case SMS_PERMISSIONS: {
-                if (ContextCompat.checkSelfPermission(this, permissionsList[0]) == PackageManager.PERMISSION_GRANTED) {
-                    permissionsResults[0] = true;
-                }
-
-                if (ContextCompat.checkSelfPermission(this, permissionsList[1]) == PackageManager.PERMISSION_GRANTED) {
-                    permissionsResults[1] = true;
-                }
-
-                while ( (!permissionsResults[0]) || (!permissionsResults[1]) ) {
-                    new AlertDialog.Builder(this)
-                            .setTitle("Heads Up")
-                            .setMessage("This app need the send and receive sms permission in order to listen to the 'Find My Phone' command")
-                            .show();
-
-                    List<String> listPermissionsNeeded = new ArrayList<>();
-
-                    if (ContextCompat.checkSelfPermission(this, permissionsList[0]) != PackageManager.PERMISSION_GRANTED) {
-                        listPermissionsNeeded.add(permissionsList[0]);
-                    }
-
-                    if (ContextCompat.checkSelfPermission(this, permissionsList[1]) != PackageManager.PERMISSION_GRANTED) {
-                        listPermissionsNeeded.add(permissionsList[1]);
-                    }
-
-                    ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), SMS_PERMISSIONS);
-                }
-            }
-
-            stopService(new Intent(this, FMPService.class));
-            startFMPService();
-        }
-    }
+//    private boolean checkPermissions() {
+//        int result;
+//        List<String> listPermissionsNeeded = new ArrayList<>();
+//        for (String p : permissionsList) {
+//            result = ContextCompat.checkSelfPermission(this, p);
+//            if (result != PackageManager.PERMISSION_GRANTED) {
+//                listPermissionsNeeded.add(p);
+//            }
+//        }
+//        if (!listPermissionsNeeded.isEmpty()) {
+//            ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), MULTIPLE_PERMISSIONS);
+//            return false;
+//        }
+//        return true;
+//    }
+//
+//    @Override
+//    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+//        switch (requestCode) {
+//            case MULTIPLE_PERMISSIONS: {
+//                for (int i = 0; i < permissionsList.length; i++) {
+//                    permissionsResults[i] = ContextCompat.checkSelfPermission(this, permissionsList[i]) != PackageManager.PERMISSION_DENIED;
+//                }
+//
+//                while ( (!permissionsResults[0]) || (!permissionsResults[1]) ) {
+//                    new AlertDialog.Builder(this)
+//                            .setTitle("Heads Up")
+//                            .setMessage("This app need the send and receive sms permission in order to listen to the 'Find My Phone' command")
+//                            .show();
+//
+//                    List<String> listPermissionsNeeded = new ArrayList<>();
+//
+//                    if (ContextCompat.checkSelfPermission(this, permissionsList[0]) != PackageManager.PERMISSION_GRANTED) {
+//                        listPermissionsNeeded.add(permissionsList[0]);
+//                    }
+//
+//                    if (ContextCompat.checkSelfPermission(this, permissionsList[1]) != PackageManager.PERMISSION_GRANTED) {
+//                        listPermissionsNeeded.add(permissionsList[1]);
+//                    }
+//
+//                    ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), SMS_PERMISSIONS);
+//                }
+//            }
+//
+//            case SMS_PERMISSIONS: {
+//                if (ContextCompat.checkSelfPermission(this, permissionsList[0]) == PackageManager.PERMISSION_GRANTED) {
+//                    permissionsResults[0] = true;
+//                }
+//
+//                if (ContextCompat.checkSelfPermission(this, permissionsList[1]) == PackageManager.PERMISSION_GRANTED) {
+//                    permissionsResults[1] = true;
+//                }
+//
+//                while ( (!permissionsResults[0]) || (!permissionsResults[1]) ) {
+//                    new AlertDialog.Builder(this)
+//                            .setTitle("Heads Up")
+//                            .setMessage("This app need the send and receive sms permission in order to listen to the 'Find My Phone' command")
+//                            .show();
+//
+//                    List<String> listPermissionsNeeded = new ArrayList<>();
+//
+//                    if (ContextCompat.checkSelfPermission(this, permissionsList[0]) != PackageManager.PERMISSION_GRANTED) {
+//                        listPermissionsNeeded.add(permissionsList[0]);
+//                    }
+//
+//                    if (ContextCompat.checkSelfPermission(this, permissionsList[1]) != PackageManager.PERMISSION_GRANTED) {
+//                        listPermissionsNeeded.add(permissionsList[1]);
+//                    }
+//
+//                    ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), SMS_PERMISSIONS);
+//                }
+//            }
+//
+//            stopService(new Intent(this, FMPService.class));
+//            startFMPService();
+//        }
+//    }
 
     @Override
     public void onClick(View v) {
@@ -216,36 +216,16 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         switch (v.getId()) { // Check which button was clicked
 
             case R.id.set_button:
-                stopService(new Intent(this, FMPService.class));
                 startFMPService();
-
-                if (isMyServiceRunning()) { // Check then change button state
-                    mBtnStop.setVisibility(View.VISIBLE);
-                    mBtnStart.setVisibility(View.INVISIBLE);
-                }
-
                 Toast.makeText(this, "Passcode has been updated!", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.stop_button:
-                stopService(new Intent(this, FMPService.class));
-
-                if (!isMyServiceRunning()) { // Check then change button state
-                    mBtnStart.setVisibility(View.VISIBLE);
-                    mBtnStop.setVisibility(View.INVISIBLE);
-                }
-
-                mTxtStatus.setText("STOPPED");
+                stopFMPService();
                 break;
 
             case R.id.start_button:
                 startFMPService();
-
-                if (isMyServiceRunning()) { // Check then change button state
-                    mBtnStop.setVisibility(View.VISIBLE);
-                    mBtnStart.setVisibility(View.INVISIBLE);
-                }
-                mTxtStatus.setText("RUNNING");
                 break;
         }
     }
@@ -284,12 +264,27 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         serviceIntent.putExtra("permissions_results", permissionsResults);
         // to the service intent
 
-        if (isMyServiceRunning()) { // Check if still running, true = stop
-            // existing service
+        stopFMPService();
+        startService(serviceIntent);
+
+        if (isMyServiceRunning()) { // Check then change button state
+            mBtnStop.setVisibility(View.VISIBLE);
+            mBtnStart.setVisibility(View.INVISIBLE);
+            mTxtStatus.setText("RUNNING");
+        }
+    }
+
+    private void stopFMPService() {
+        if (isMyServiceRunning()) {
             stopService(new Intent(this, FMPService.class));
+
+            mBtnStart.setVisibility(View.VISIBLE);
+            mBtnStop.setVisibility(View.INVISIBLE);
+
+            mTxtStatus.setText("STOPPED");
         }
 
-        startService(serviceIntent);
+
     }
 
     /**
