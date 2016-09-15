@@ -50,6 +50,8 @@ import java.util.List;
 import permissions.dispatcher.NeedsPermission;
 import permissions.dispatcher.OnNeverAskAgain;
 import permissions.dispatcher.OnPermissionDenied;
+import permissions.dispatcher.OnShowRationale;
+import permissions.dispatcher.PermissionRequest;
 import permissions.dispatcher.RuntimePermissions;
 
 @RuntimePermissions
@@ -281,8 +283,45 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         }
     }
 
-    @OnNeverAskAgain(Manifest.permission.RECEIVE_SMS)
+//    @OnShowRationale(Manifest.permission.CAMERA)
+//    void showRationaleForReceiveSMS(final PermissionRequest request) {
+//        new AlertDialog.Builder(this)
+//                .setMessage("This app needs to listen to incoming SMS, so that on receiving the command code, the find my phone functions can be carried out.\n" +
+//                        "Therefore the 'Request SMS' is required.\n" +
+//                        "No personal data will be collected or stored.")
+//                .setPositiveButton("Allow",
+//                        new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialogInterface, int i) {
+//                                request.proceed();
+//                            }
+//                        })
+//                .setNegativeButton("Deny",
+//                        new DialogInterface.OnClickListener() {
+//                            @Override
+//                            public void onClick(DialogInterface dialogInterface, int i) {
+//                                request.cancel();
+//                            }
+//                        })
+//                .show();
+//    }
+
+    @OnPermissionDenied(Manifest.permission.RECEIVE_SMS)
     public void showDeniedForReceiveSMS() {
+        new AlertDialog.Builder(this)
+                .setTitle("Heads Up")
+                .setMessage("Receive SMS is a required permission so that the app can listen to incoming SMS containing the command code. Please allow it.")
+                .setPositiveButton("Ok",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                startFMPService();
+                            }
+                        })
+                .show();
+    }
+
+    @OnNeverAskAgain(Manifest.permission.RECEIVE_SMS)
+    public void showNeverAskAgainReceiveSMS() {
         new AlertDialog.Builder(this)
                 .setTitle("Error")
                 .setMessage("Receive SMS is a required permission for hte core functionality of this app!\nWithout this the app is unable to function as intended.\nPlease go into system settings and allow the 'Receive SMS' permission for this app.")
