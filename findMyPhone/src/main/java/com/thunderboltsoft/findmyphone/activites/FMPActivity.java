@@ -47,6 +47,12 @@ import com.thunderboltsoft.ringmyphone.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import permissions.dispatcher.NeedsPermission;
+import permissions.dispatcher.OnNeverAskAgain;
+import permissions.dispatcher.OnPermissionDenied;
+import permissions.dispatcher.RuntimePermissions;
+
+@RuntimePermissions
 public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
     // RevMob instance
@@ -127,7 +133,7 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         mPreferences = getSharedPreferences("PREFERENCES", MODE_PRIVATE);
 
         retrieveLastCommand();
-        startFMPService();
+        FMPActivityPermissionsDispatcher.startFMPServiceWithCheck(this);
         setUpListeners();
     }
 
@@ -254,7 +260,8 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
     /**
      * Starts the "Find My Phone" service
      */
-    private void startFMPService() {
+    @NeedsPermission(Manifest.permission.RECEIVE_SMS)
+    public void startFMPService() {
         Intent serviceIntent;
 
         setCommand();
@@ -272,6 +279,21 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
             mBtnStart.setVisibility(View.INVISIBLE);
             mTxtStatus.setText("RUNNING");
         }
+    }
+
+    @OnNeverAskAgain(Manifest.permission.RECEIVE_SMS)
+    public void showDeniedForReceiveSMS() {
+        new AlertDialog.Builder(this)
+                .setTitle("Error")
+                .setMessage("Receive SMS is a required permission for hte core functionality of this app!\nWithout this the app is unable to function as intended.\nPlease go into system settings and allow the 'Receive SMS' permission for this app.")
+                .setPositiveButton("Ok",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // Finish activity
+                                finish();
+                            }
+                        })
+                .show();
     }
 
     private void stopFMPService() {
