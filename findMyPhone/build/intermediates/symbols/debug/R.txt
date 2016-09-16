@@ -916,8 +916,10 @@ int string search_menu_title 0x7f070013
 int string set_button 0x7f07003a
 int string start_button 0x7f07003b
 int string status_bar_notification_info_overflow 0x7f070014
-int string stop_button 0x7f07003c
-int string title_activity_settings 0x7f07003d
+int string status_running 0x7f07003c
+int string status_stopped 0x7f07003d
+int string stop_button 0x7f07003e
+int string title_activity_settings 0x7f07003f
 int style ActionBarPopupThemeOverlay 0x7f09008c
 int style ActionBarThemeOverlay 0x7f09008d
 int style AlertDialog_AppCompat 0x7f09008e

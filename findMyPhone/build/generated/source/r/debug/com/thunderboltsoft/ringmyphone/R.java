@@ -2879,8 +2879,10 @@ containing a value of this type.
         public static final int set_button=0x7f07003a;
         public static final int start_button=0x7f07003b;
         public static final int status_bar_notification_info_overflow=0x7f070014;
-        public static final int stop_button=0x7f07003c;
-        public static final int title_activity_settings=0x7f07003d;
+        public static final int status_running=0x7f07003c;
+        public static final int status_stopped=0x7f07003d;
+        public static final int stop_button=0x7f07003e;
+        public static final int title_activity_settings=0x7f07003f;
     }
     public static final class style {
         public static final int ActionBarPopupThemeOverlay=0x7f09008c;

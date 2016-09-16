@@ -14,6 +14,7 @@
 
 package com.thunderboltsoft.findmyphone.services;
 
+import java.io.IOException;
 import java.util.Locale;
 
 import android.app.Notification;
@@ -24,12 +25,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
 import android.hardware.Camera.Parameters;
 import android.media.AudioManager;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PowerManager;
@@ -46,48 +49,48 @@ public class FMPService extends Service {
     /*
      * This is 5 minutes in nanoseconds
      */
-    long duration = 300000000000L;
+    long mDuration = 300000000000L;
 
     /*
      * The start time
      */
-    long startTime;
+    long mStartTime;
 
     /*
      * Time that has passed
      */
-    long elapsedTime;
+    long mElapsedTime;
 
     /*
      * Sets up the intent filter
      */
-    final IntentFilter theFilter = new IntentFilter();
+    final IntentFilter mIntentFilter = new IntentFilter();
 
     /*
-     * The command word the service has to listen for
+     * The mCommand word the service has to listen for
      */
-    private String command;
+    private String mCommand;
 
     /*
      * For use with playing the default ring tone of the device
      */
-    private AudioManager audioManager;
+    private AudioManager mAudioManager;
 
     /*
      * Saves the current volume of the device so that app with return to the
      * device defaults
      */
-    private int currentVolume;
+    private int mCurrentVolume;
 
     /*
      * Contains info of default ring tone
      */
-    private Uri notification;
+    private Uri mDefaultRingtoneNotification;
 
     /*
      * Holds the default ring tone of the device
      */
-    private Ringtone r;
+    private Ringtone mRingtone;
 
     /*
      * Specifies the intent filter
@@ -101,7 +104,7 @@ public class FMPService extends Service {
     /*
      * Used to listen onto incoming sms
      */
-    public BroadcastReceiver yourReceiver = new BroadcastReceiver() {
+    public BroadcastReceiver mSMSReceiver = new BroadcastReceiver() {
 
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -147,8 +150,6 @@ public class FMPService extends Service {
 
     @Override
     public IBinder onBind(Intent arg0) {
-
-        // We don't actually do any binding in this app
         return null;
     }
 
@@ -156,21 +157,17 @@ public class FMPService extends Service {
     public void onCreate() {
         super.onCreate();
 
-        Log.v("CHECK", "INside onCreate");
-
-//		yourReceiver = new MyReceiver(this);
-
         Notification note;
 
         // adds filters to filter out everything except incoming sms
-        theFilter.addAction(ACTION);
+        mIntentFilter.addAction(ACTION);
 
         // Priority is set high so that the incoming SMS is not "hijacked" by
         // other SMS clients
-        theFilter.setPriority(1000);
+        mIntentFilter.setPriority(1000);
 
         // Registers the receiver for use by the application
-        this.registerReceiver(this.yourReceiver, theFilter);
+        this.registerReceiver(this.mSMSReceiver, mIntentFilter);
 
         Intent i = new Intent(this, FMPActivity.class);
         i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -192,15 +189,19 @@ public class FMPService extends Service {
         super.onDestroy();
 
         stopForeground(true);
-        this.unregisterReceiver(this.yourReceiver);
+        this.unregisterReceiver(this.mSMSReceiver);
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        command = intent.getExtras().getString("command");
-
+        mCommand = intent.getExtras().getString("command");
         PERMISSION_CAMERA_APPROVED = intent.getExtras().getBoolean("camera_permission");
 
+        if (PERMISSION_CAMERA_APPROVED) {
+            Log.v("FMP", "Camera Approved");
+        } else {
+            Log.v("FMP", "Camera Denied");
+        }
 
         return START_REDELIVER_INTENT;
     }
@@ -216,16 +217,8 @@ public class FMPService extends Service {
     protected void messageReceived(String message, String messAddr, Context context) {
         String commandReceived = message.toLowerCase(Locale.getDefault());
 
-        Log.v("CHECK", "INside messageReceived");
-
-        // Checks if the received sms is the command word
-        if (commandReceived.equals(command)) {
-
-            Toast.makeText(getApplicationContext(), "Test", Toast.LENGTH_SHORT).show();
-
-//			SmsManager sms = SmsManager.getDefault();
-//
-//			sms.sendTextMessage(messAddr, null, coords, null, null);
+        // Checks if the received sms is the mCommand word
+        if (commandReceived.equals(mCommand)) {
 
             // Starts ringing the default ring tone and maximum volume
             startRingMyPhone(context);
@@ -235,12 +228,10 @@ public class FMPService extends Service {
                     stopRingMyPhone();
                 }
             }
-
         }
-//
-//		// TODO Need to check if this is needed
-        this.unregisterReceiver(this.yourReceiver);
-        this.registerReceiver(this.yourReceiver, theFilter);
+
+        this.unregisterReceiver(this.mSMSReceiver);
+        this.registerReceiver(this.mSMSReceiver, mIntentFilter);
     }
 
     /*
@@ -256,18 +247,18 @@ public class FMPService extends Service {
 
         // It will wait until the user switched the screen before proceeding
         // further
-        while ((!isScreenOn) && (elapsedTime < duration)) {
+        while ((!isScreenOn) && (mElapsedTime < mDuration)) {
             isScreenOn = powerm.isScreenOn();
         }
 
         // If ring tone is still playing, it will stop the ring tone
-        if (r.isPlaying()) {
-            r.stop();
+        if (mRingtone.isPlaying()) {
+            mRingtone.stop();
         }
 
         // The audio level of the RING stream will be reset back to its original
         // volume
-        audioManager.setStreamVolume(AudioManager.STREAM_RING, currentVolume,
+        mAudioManager.setStreamVolume(AudioManager.STREAM_RING, mCurrentVolume,
                 AudioManager.FLAG_ALLOW_RINGER_MODES);
     }
 
@@ -281,27 +272,27 @@ public class FMPService extends Service {
         int streamMaxVolume;
 
         // Retrieves audio service from the list of system services
-        audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         // Saves the current audio volume
-        currentVolume = audioManager.getStreamVolume(AudioManager.STREAM_RING);
+        mCurrentVolume = mAudioManager.getStreamVolume(AudioManager.STREAM_RING);
 
         // Retrieves the maximum volume supported by the stream
-        streamMaxVolume = audioManager
+        streamMaxVolume = mAudioManager
                 .getStreamMaxVolume(AudioManager.STREAM_RING);
 
         // Sets the stream volume to the maximum
-        audioManager.setStreamVolume(AudioManager.STREAM_RING, streamMaxVolume,
+        mAudioManager.setStreamVolume(AudioManager.STREAM_RING, streamMaxVolume,
                 AudioManager.FLAG_ALLOW_RINGER_MODES
                         | AudioManager.FLAG_PLAY_SOUND);
 
         // Retrieves the default ring tone
-        notification = RingtoneManager
+        mDefaultRingtoneNotification = RingtoneManager
                 .getDefaultUri(RingtoneManager.TYPE_RINGTONE);
 
         // Plays the default ring tone
-        r = RingtoneManager.getRingtone(context, notification);
-        r.play();
+        mRingtone = RingtoneManager.getRingtone(context, mDefaultRingtoneNotification);
+        mRingtone.play();
 
     }
 
@@ -313,28 +304,42 @@ public class FMPService extends Service {
      * @return: If the method was successful
      */
     private boolean startFlashLight(Context context) {
-
-        boolean isSuccessful;
-        PackageManager pm;
-        Thread t1;
-
-        // If the device has no camera then this will remain false
-        // Thereby skipping the remaining code and jumping to the parent method
-        isSuccessful = false;
-
-        // Retrieves list of packages on the phone
-        pm = context.getPackageManager();
-
-        // Checks if the device has a camera
-        if (!pm.hasSystemFeature(PackageManager.FEATURE_CAMERA)) {
-            return isSuccessful;
-        }
+        Thread workerCameraThread, workerThread;
 
         // Creates a new thread t1
         // We will be making the thread sleep when the camera light is on and
         // off
         // This will simulate the "strobe light" effect
-        t1 = new Thread(new Runnable() {
+        workerThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                Log.v("FMP", "Not in camera worker thread");
+
+                PowerManager powerm;
+                boolean isScreenOn = false;
+
+                // Retrieves a list of hardware features on the device
+                powerm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+
+                // Sets the timer
+                mStartTime = System.nanoTime();
+                mElapsedTime = System.nanoTime() - mStartTime;
+
+                while ((!isScreenOn) && (mElapsedTime < mDuration)) {
+
+                    // The current elapsed time
+                    mElapsedTime = System.nanoTime() - mStartTime;
+                    isScreenOn = powerm.isScreenOn();
+                }
+            }
+        });
+
+        // Creates a new thread t1
+        // We will be making the thread sleep when the camera light is on and
+        // off
+        // This will simulate the "strobe light" effect
+        workerCameraThread = new Thread(new Runnable() {
 
             /*
              * Time in milliseconds on how long to keep the led light on
@@ -350,35 +355,38 @@ public class FMPService extends Service {
             public void run() {
 
                 PowerManager powerm;
-                boolean isScreenOn;
+                boolean isScreenOn = false;
                 Camera camera;
                 final Parameters p;
 
                 // Retrieves a list of hardware features on the device
                 powerm = (PowerManager) getSystemService(Context.POWER_SERVICE);
 
-                // Will check if the screen is switched on so that execution
-                // will be stopped
-                isScreenOn = false;
-
                 // Opens camera and retrieves camera parameters
                 camera = Camera.open();
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+                    try {
+                        Log.v("FMP", "About to setPreviewTexture");
+                        camera.setPreviewTexture(new SurfaceTexture(0));
+                    } catch (IOException e) {
+                    }
+                }
                 p = camera.getParameters();
 
                 try {
 
                     // Sets the timer
-                    startTime = System.nanoTime();
-                    elapsedTime = System.nanoTime() - startTime;
+                    mStartTime = System.nanoTime();
+                    mElapsedTime = System.nanoTime() - mStartTime;
 
-                    // If screen is off and user hasn't sent "stop" command is
+                    // If screen is off and user hasn't sent "stop" mCommand is
                     // continue with strobe light
                     // Continues as long as the elapsed time is less than the
                     // time of 5 minutes
-                    while ((!isScreenOn) && (elapsedTime < duration)) {
+                    while ((!isScreenOn) && (mElapsedTime < mDuration)) {
 
                         // The current elapsed time
-                        elapsedTime = System.nanoTime() - startTime;
+                        mElapsedTime = System.nanoTime() - mStartTime;
 
                         // Another check if screen is turned on
                         isScreenOn = powerm.isScreenOn();
@@ -402,8 +410,13 @@ public class FMPService extends Service {
             }
         });
 
-        // Starts the thread
-        t1.start();
+
+        if (PERMISSION_CAMERA_APPROVED) {
+            // Starts the thread
+            workerCameraThread.start();
+        } else {
+            workerThread.start();
+        }
 
         // Calls to stop phone ringing
         // Main thread will continue to even though another method is processed
@@ -412,9 +425,6 @@ public class FMPService extends Service {
         // the user to turn screen on
         stopRingMyPhone();
 
-        // Method completed without interruptions
-        isSuccessful = true;
-
-        return isSuccessful;
+        return true;
     }
 }

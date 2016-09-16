@@ -365,6 +365,8 @@
     <string name="set_button">Set Passcode</string>
     <string name="start_button">Start Service</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="status_running">RUNNING</string>
+    <string name="status_stopped">STOPPED</string>
     <string name="stop_button">Stop Service</string>
     <string name="title_activity_settings">Settings</string>
     <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light">

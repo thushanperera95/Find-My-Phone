@@ -121,6 +121,7 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
                     if (deniedPermission.getPermissionName().equals(Manifest.permission.RECEIVE_SMS)) {
                         if (deniedPermission.isPermanentlyDenied()) {
                             String message = "Receive SMS is a required permission for the core functionality of this app!\nWithout this the app is unable to function as intended.\n\nPlease use the Application Manager under System Settings and allow the 'SMS' permission for this app.";
+
                             new AlertDialog.Builder(FMPActivity.this)
                                     .setTitle("Heads up")
                                     .setMessage(message)
@@ -250,7 +251,7 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         if (isMyServiceRunning()) { // Check then change button state
             mBtnStop.setVisibility(View.VISIBLE);
             mBtnStart.setVisibility(View.INVISIBLE);
-            mTxtStatus.setText("RUNNING");
+            mTxtStatus.setText(R.string.status_running);
         }
     }
 
@@ -261,7 +262,7 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
             mBtnStart.setVisibility(View.VISIBLE);
             mBtnStop.setVisibility(View.INVISIBLE);
 
-            mTxtStatus.setText("STOPPED");
+            mTxtStatus.setText(R.string.status_stopped);
         }
     }
 
