@@ -13,7 +13,6 @@
 package com.thunderboltsoft.findmyphone.activites;
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.app.AlertDialog;
@@ -21,11 +20,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -46,24 +41,13 @@ import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
 import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
-import com.karumi.dexter.listener.multi.SnackbarOnAnyDeniedMultiplePermissionsListener;
 import com.revmob.RevMob;
-import com.revmob.RevMobAdsListener;
 import com.revmob.ads.banner.RevMobBanner;
 import com.thunderboltsoft.findmyphone.services.FMPService;
 import com.thunderboltsoft.ringmyphone.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import permissions.dispatcher.NeedsPermission;
-import permissions.dispatcher.OnNeverAskAgain;
-import permissions.dispatcher.OnPermissionDenied;
-import permissions.dispatcher.OnShowRationale;
-import permissions.dispatcher.PermissionRequest;
-import permissions.dispatcher.RuntimePermissions;
-
-@RuntimePermissions
 public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
     // RevMob instance
@@ -88,24 +72,7 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
     private TextView mTxtStatus;
 
-    public static final int MULTIPLE_PERMISSIONS = 10; // code you want.
-    public static final int SMS_PERMISSIONS = 11;
-
     private boolean mCameraPermissionCheck = false;
-
-    String[] permissionsList = new String[]{
-            Manifest.permission.RECEIVE_SMS,
-            Manifest.permission.SEND_SMS,
-            Manifest.permission.CAMERA,
-            Manifest.permission.INTERNET
-    };
-
-    boolean[] permissionsResults = new boolean[]{
-            true,
-            true,
-            true,
-            true
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,73 +81,7 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
         stopFMPService();
 
-        //FMPActivityPermissionsDispatcher.checkCameraPermissionWithCheck(this);
         Dexter.initialize(getApplication());
-
-        Dexter.checkPermissionsOnSameThread(new MultiplePermissionsListener() {
-            @Override
-            public void onPermissionsChecked(MultiplePermissionsReport report) {
-
-                List<PermissionDeniedResponse> deniedPermissions = report.getDeniedPermissionResponses();
-                for (PermissionDeniedResponse deniedPermission : deniedPermissions) {
-                    if (deniedPermission.getPermissionName().equals(Manifest.permission.RECEIVE_SMS)) {
-                        String message = "Receive SMS is a required permission for the core functionality of this app!\n" +
-                                "Without this the app is unable to function as intended.\n" +
-                                "Please re-run this app and allow this permission.";
-                        if (deniedPermission.isPermanentlyDenied()) {
-                            message = "Receive SMS is a required permission for hte core functionality of this app!\nWithout this the app is unable to function as intended.\nPlease go into system settings and allow the 'Receive SMS' permission for this app.";
-                        }
-                        new AlertDialog.Builder(FMPActivity.this)
-                                .setTitle("Error")
-                                .setMessage(message)
-                                .setPositiveButton("Ok",
-                                        new DialogInterface.OnClickListener() {
-                                            public void onClick(DialogInterface dialog, int which) {
-                                                // Finish activity
-                                                finish();
-                                            }
-                                        })
-                                .show();
-                    } else if (deniedPermission.getPermissionName().equals(Manifest.permission.CAMERA)) {
-                        Toast.makeText(getApplicationContext(), "Flashlight will not flash when trying to locate your phone", Toast.LENGTH_SHORT).show();
-                        mCameraPermissionCheck = false;
-                    }
-                }
-
-                List<PermissionGrantedResponse> grantedPermissions = report.getGrantedPermissionResponses();
-                for (PermissionGrantedResponse grantedPermission: grantedPermissions) {
-                    if (grantedPermission.getPermissionName().equals(Manifest.permission.CAMERA)) {
-                        mCameraPermissionCheck = true;
-                    }
-                }
-            }
-
-            @Override
-            public void onPermissionRationaleShouldBeShown(List<com.karumi.dexter.listener.PermissionRequest> permissions, final PermissionToken token) {
-                token.continuePermissionRequest();
-//                for (com.karumi.dexter.listener.PermissionRequest request : permissions) {
-//                    new AlertDialog.Builder(FMPActivity.this)
-//                            .setMessage("App needs access to the camera in order to control the led flashlight (Make it blink so that the phone is easier to find")
-//                            .setPositiveButton("Allow",
-//                                    new DialogInterface.OnClickListener() {
-//                                        @Override
-//                                        public void onClick(DialogInterface dialogInterface, int i) {
-//                                            mCameraPermissionCheck = true;
-//                                            token.continuePermissionRequest();
-//                                        }
-//                                    })
-//                            .setNegativeButton("Deny",
-//                                    new DialogInterface.OnClickListener() {
-//                                        @Override
-//                                        public void onClick(DialogInterface dialogInterface, int i) {
-//                                            mCameraPermissionCheck = false;
-//                                            token.cancelPermissionRequest();
-//                                        }
-//                                    })
-//                            .show();
-//                }
-            }
-        }, Manifest.permission.RECEIVE_SMS, Manifest.permission.CAMERA);
 
         mBtnStop = (Button) findViewById(R.id.stop_button);
         mBtnStart = (Button) findViewById(R.id.start_button);
@@ -210,89 +111,84 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         mPreferences = getSharedPreferences("PREFERENCES", MODE_PRIVATE);
 
         retrieveLastCommand();
-        startFMPService();
-//        FMPActivityPermissionsDispatcher.startFMPServiceWithCheck(this);
+
+        Dexter.checkPermissionsOnSameThread(new MultiplePermissionsListener() {
+            @Override
+            public void onPermissionsChecked(MultiplePermissionsReport report) {
+
+                List<PermissionDeniedResponse> deniedPermissions = report.getDeniedPermissionResponses();
+                for (PermissionDeniedResponse deniedPermission : deniedPermissions) {
+                    if (deniedPermission.getPermissionName().equals(Manifest.permission.RECEIVE_SMS)) {
+                        if (deniedPermission.isPermanentlyDenied()) {
+                            String message = "Receive SMS is a required permission for the core functionality of this app!\nWithout this the app is unable to function as intended.\n\nPlease use the Application Manager under System Settings and allow the 'SMS' permission for this app.";
+                            new AlertDialog.Builder(FMPActivity.this)
+                                    .setTitle("Heads up")
+                                    .setMessage(message)
+                                    .setPositiveButton("Ok",
+                                            new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    // Finish activity
+                                                    finish();
+                                                }
+                                            })
+                                    .setNegativeButton("Settings",
+                                            new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    // Finish activity
+                                                    startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                                    finish();
+                                                }
+                                            })
+                                    .setCancelable(false)
+                                    .show();
+                        } else {
+                            String message = "Receive SMS is a required permission for the core functionality of this app!\n" +
+                                    "Without this the app is unable to function as intended.\n\n" +
+                                    "Please re-run this app and allow this permission.";
+
+                            new AlertDialog.Builder(FMPActivity.this)
+                                    .setTitle("Heads up")
+                                    .setMessage(message)
+                                    .setPositiveButton("Ok",
+                                            new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    // Finish activity
+                                                    finish();
+                                                }
+                                            })
+                                    .setCancelable(false)
+                                    .show();
+                        }
+                    } else if (deniedPermission.getPermissionName().equals(Manifest.permission.CAMERA)) {
+                        Toast.makeText(getApplicationContext(), "Flashlight will not flash when trying to locate your phone", Toast.LENGTH_SHORT).show();
+                        mCameraPermissionCheck = false;
+                    }
+                }
+
+                boolean proceed = false;
+
+                List<PermissionGrantedResponse> grantedPermissions = report.getGrantedPermissionResponses();
+                for (PermissionGrantedResponse grantedPermission : grantedPermissions) {
+                    if (grantedPermission.getPermissionName().equals(Manifest.permission.CAMERA)) {
+                        mCameraPermissionCheck = true;
+                    } else if (grantedPermission.getPermissionName().equals(Manifest.permission.RECEIVE_SMS)) {
+                        proceed = true;
+                    }
+                }
+
+                if (proceed) {
+                    startFMPService();
+                }
+            }
+
+            @Override
+            public void onPermissionRationaleShouldBeShown(List<com.karumi.dexter.listener.PermissionRequest> permissions, final PermissionToken token) {
+                token.continuePermissionRequest(); // Just continue I guess, I dunno wtf else to do here
+            }
+        }, Manifest.permission.RECEIVE_SMS, Manifest.permission.CAMERA);
+
         setUpListeners();
     }
-
-
-//    private boolean checkPermissions() {
-//        int result;
-//        List<String> listPermissionsNeeded = new ArrayList<>();
-//        for (String p : permissionsList) {
-//            result = ContextCompat.checkSelfPermission(this, p);
-//            if (result != PackageManager.PERMISSION_GRANTED) {
-//                listPermissionsNeeded.add(p);
-//            }
-//        }
-//        if (!listPermissionsNeeded.isEmpty()) {
-//            ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), MULTIPLE_PERMISSIONS);
-//            return false;
-//        }
-//        return true;
-//    }
-//
-//    @Override
-//    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-//        switch (requestCode) {
-//            case MULTIPLE_PERMISSIONS: {
-//                for (int i = 0; i < permissionsList.length; i++) {
-//                    permissionsResults[i] = ContextCompat.checkSelfPermission(this, permissionsList[i]) != PackageManager.PERMISSION_DENIED;
-//                }
-//
-//                while ( (!permissionsResults[0]) || (!permissionsResults[1]) ) {
-//                    new AlertDialog.Builder(this)
-//                            .setTitle("Heads Up")
-//                            .setMessage("This app need the send and receive sms permission in order to listen to the 'Find My Phone' command")
-//                            .show();
-//
-//                    List<String> listPermissionsNeeded = new ArrayList<>();
-//
-//                    if (ContextCompat.checkSelfPermission(this, permissionsList[0]) != PackageManager.PERMISSION_GRANTED) {
-//                        listPermissionsNeeded.add(permissionsList[0]);
-//                    }
-//
-//                    if (ContextCompat.checkSelfPermission(this, permissionsList[1]) != PackageManager.PERMISSION_GRANTED) {
-//                        listPermissionsNeeded.add(permissionsList[1]);
-//                    }
-//
-//                    ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), SMS_PERMISSIONS);
-//                }
-//            }
-//
-//            case SMS_PERMISSIONS: {
-//                if (ContextCompat.checkSelfPermission(this, permissionsList[0]) == PackageManager.PERMISSION_GRANTED) {
-//                    permissionsResults[0] = true;
-//                }
-//
-//                if (ContextCompat.checkSelfPermission(this, permissionsList[1]) == PackageManager.PERMISSION_GRANTED) {
-//                    permissionsResults[1] = true;
-//                }
-//
-//                while ( (!permissionsResults[0]) || (!permissionsResults[1]) ) {
-//                    new AlertDialog.Builder(this)
-//                            .setTitle("Heads Up")
-//                            .setMessage("This app need the send and receive sms permission in order to listen to the 'Find My Phone' command")
-//                            .show();
-//
-//                    List<String> listPermissionsNeeded = new ArrayList<>();
-//
-//                    if (ContextCompat.checkSelfPermission(this, permissionsList[0]) != PackageManager.PERMISSION_GRANTED) {
-//                        listPermissionsNeeded.add(permissionsList[0]);
-//                    }
-//
-//                    if (ContextCompat.checkSelfPermission(this, permissionsList[1]) != PackageManager.PERMISSION_GRANTED) {
-//                        listPermissionsNeeded.add(permissionsList[1]);
-//                    }
-//
-//                    ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), SMS_PERMISSIONS);
-//                }
-//            }
-//
-//            stopService(new Intent(this, FMPService.class));
-//            startFMPService();
-//        }
-//    }
 
     @Override
     public void onClick(View v) {
@@ -335,95 +231,10 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         }
     }
 
-    @OnPermissionDenied(Manifest.permission.RECEIVE_SMS)
-    public void deniedForReceiveSMS() {
-        System.out.println("TEST");
-        new AlertDialog.Builder(this)
-                .setTitle("Heads Up")
-                .setMessage("Receive SMS is a required permission so that the app can listen to incoming SMS containing the command code. Please allow it.")
-                .setPositiveButton("Ok",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                //FMPActivityPermissionsDispatcher.startFMPServiceWithCheck(currentActivity);
-                                finish();
-                            }
-                        })
-                .show();
-    }
-
-    @OnNeverAskAgain(Manifest.permission.RECEIVE_SMS)
-    public void showNeverAskAgainReceiveSMS() {
-        new AlertDialog.Builder(this)
-                .setTitle("Error")
-                .setMessage("Receive SMS is a required permission for hte core functionality of this app!\nWithout this the app is unable to function as intended.\nPlease go into system settings and allow the 'Receive SMS' permission for this app.")
-                .setPositiveButton("Ok",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                // Finish activity
-                                finish();
-                            }
-                        })
-                .show();
-    }
-
-    @NeedsPermission(Manifest.permission.CAMERA)
-    public void checkCameraPermission() {
-        Toast.makeText(this, "test", Toast.LENGTH_SHORT).show();
-        mCameraPermissionCheck = true;
-    }
-
-    @OnShowRationale(Manifest.permission.CAMERA)
-    void showRationaleForCamera(final PermissionRequest request) {
-        Toast.makeText(this, "test2", Toast.LENGTH_SHORT).show();
-        new AlertDialog.Builder(this)
-                .setMessage("App needs access to the camera in order to control the led flashlight (Make it blink so that the phone is easier to find")
-                .setPositiveButton("Allow",
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                mCameraPermissionCheck = true;
-                                request.proceed();
-                            }
-                        })
-                .setNegativeButton("Deny",
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                mCameraPermissionCheck = false;
-                                request.cancel();
-                            }
-                        })
-                .show();
-    }
-
-    @OnPermissionDenied(Manifest.permission.CAMERA)
-    public void cameraPermissionDenied() {
-        Toast.makeText(this, "test", Toast.LENGTH_SHORT).show();
-        mCameraPermissionCheck = false;
-    }
-
     /**
      * Starts the "Find My Phone" service
      */
-    @NeedsPermission(Manifest.permission.RECEIVE_SMS)
     public void startFMPService() {
-//        FMPActivityPermissionsDispatcher.checkCameraPermissionWithCheck(this);
-//        List<String> listPermissionsNeeded = new ArrayList<>();
-//
-//        listPermissionsNeeded.add(Manifest.permission.RECEIVE_SMS);
-//        if (ContextCompat.checkSelfPermission(this, permissionsList[0]) != PackageManager.PERMISSION_GRANTED) {
-//            new AlertDialog.Builder(this)
-//                    .setTitle("Heads Up")
-//                    .setMessage("Receive SMS is a required permission so that the app can listen to incoming SMS containing the command code. Please allow it.")
-//                    .setPositiveButton("Ok",
-//                            new DialogInterface.OnClickListener() {
-//                                public void onClick(DialogInterface dialog, int which) {
-//                                    //FMPActivityPermissionsDispatcher.startFMPServiceWithCheck(currentActivity);
-//                                    finish();
-//                                }
-//                            })
-//                    .show();
-//        }
         Intent serviceIntent;
 
         setCommand();
@@ -443,31 +254,6 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         }
     }
 
-//    @OnShowRationale(Manifest.permission.CAMERA)
-//    void showRationaleForReceiveSMS(final PermissionRequest request) {
-//        new AlertDialog.Builder(this)
-//                .setMessage("This app needs to listen to incoming SMS, so that on receiving the command code, the find my phone functions can be carried out.\n" +
-//                        "Therefore the 'Request SMS' is required.\n" +
-//                        "No personal data will be collected or stored.")
-//                .setPositiveButton("Allow",
-//                        new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialogInterface, int i) {
-//                                request.proceed();
-//                            }
-//                        })
-//                .setNegativeButton("Deny",
-//                        new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialogInterface, int i) {
-//                                request.cancel();
-//                            }
-//                        })
-//                .show();
-//    }
-
-
-
     private void stopFMPService() {
         if (isMyServiceRunning()) {
             stopService(new Intent(this, FMPService.class));
@@ -477,8 +263,6 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
             mTxtStatus.setText("STOPPED");
         }
-
-
     }
 
     /**
