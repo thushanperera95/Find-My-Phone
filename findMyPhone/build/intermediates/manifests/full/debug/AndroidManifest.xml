@@ -5,7 +5,7 @@
     android:versionName="2.0.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="10"
         android:targetSdkVersion="24" />
 
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
@@ -41,6 +41,10 @@
         <activity
             android:name="com.thunderboltsoft.findmyphone.activites.SettingsActivity"
             android:label="@string/title_activity_settings" />
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Transparent" />
     </application>
 
 </manifest>

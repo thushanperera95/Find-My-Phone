@@ -135,6 +135,72 @@ MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects
 MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.karumi:dexter:2.3.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:design:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-fragment:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:appcompat-v7:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-fragment:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:recyclerview-v7:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:appcompat-v7:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-fragment:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:12:15-75
 	android:targetSdkVersion
@@ -247,6 +313,71 @@ MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects
 MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.karumi:dexter:2.3.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:26:5-31:19
+MERGED from [com.android.support:design:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:22:9-41
 	android:allowBackup
@@ -287,3 +418,11 @@ ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManif
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:41:13-60
 	android:name
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:40:13-86
+activity#com.karumi.dexter.DexterActivity
+ADDED from [com.karumi:dexter:2.3.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:27:9-30:56
+	android:launchMode
+		ADDED from [com.karumi:dexter:2.3.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:29:13-44
+	android:theme
+		ADDED from [com.karumi:dexter:2.3.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:30:13-53
+	android:name
+		ADDED from [com.karumi:dexter:2.3.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:28:13-60

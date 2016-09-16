@@ -6,7 +6,7 @@ android {
     buildToolsVersion "24.0.0"
     defaultConfig {
         applicationId "com.thunderboltsoft.ringmyphone"
-        minSdkVersion 9
+        minSdkVersion 10
         targetSdkVersion 24
         versionCode 1
         versionName '2.0.0'
@@ -29,4 +29,5 @@ dependencies {
     compile 'com.android.support:support-v4:24.2.1'
     compile 'com.github.hotchemi:permissionsdispatcher:2.1.3'
     apt 'com.github.hotchemi:permissionsdispatcher-processor:2.1.3'
+    compile 'com.karumi:dexter:2.3.1'
 }

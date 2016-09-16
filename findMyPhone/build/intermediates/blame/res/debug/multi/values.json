@@ -10714,8 +10714,29 @@
                     "startLine": 1708,
                     "startColumn": 4,
                     "startOffset": 135852,
+                    "endLine": 1715,
+                    "endColumn": 10,
+                    "endOffset": 136274
+                },
+                "from": {
+                    "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.karumi\\dexter\\2.3.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 324,
+                        "endLine": 14,
+                        "endColumn": 10,
+                        "endOffset": 746
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1716,
+                    "startColumn": 4,
+                    "startOffset": 136279,
                     "endColumn": 79,
-                    "endOffset": 135927
+                    "endOffset": 136354
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10730,11 +10751,11 @@
             },
             {
                 "to": {
-                    "startLine": 1709,
+                    "startLine": 1717,
                     "startColumn": 4,
-                    "startOffset": 135932,
+                    "startOffset": 136359,
                     "endColumn": 99,
-                    "endOffset": 136027
+                    "endOffset": 136454
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10749,11 +10770,11 @@
             },
             {
                 "to": {
-                    "startLine": 1710,
+                    "startLine": 1718,
                     "startColumn": 4,
-                    "startOffset": 136032,
+                    "startOffset": 136459,
                     "endColumn": 89,
-                    "endOffset": 136117
+                    "endOffset": 136544
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10768,11 +10789,11 @@
             },
             {
                 "to": {
-                    "startLine": 1711,
+                    "startLine": 1719,
                     "startColumn": 4,
-                    "startOffset": 136122,
+                    "startOffset": 136549,
                     "endColumn": 109,
-                    "endOffset": 136227
+                    "endOffset": 136654
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10787,11 +10808,11 @@
             },
             {
                 "to": {
-                    "startLine": 1712,
+                    "startLine": 1720,
                     "startColumn": 4,
-                    "startOffset": 136232,
+                    "startOffset": 136659,
                     "endColumn": 93,
-                    "endOffset": 136321
+                    "endOffset": 136748
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10806,11 +10827,11 @@
             },
             {
                 "to": {
-                    "startLine": 1713,
+                    "startLine": 1721,
                     "startColumn": 4,
-                    "startOffset": 136326,
+                    "startOffset": 136753,
                     "endColumn": 105,
-                    "endOffset": 136427
+                    "endOffset": 136854
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10825,11 +10846,11 @@
             },
             {
                 "to": {
-                    "startLine": 1714,
+                    "startLine": 1722,
                     "startColumn": 4,
-                    "startOffset": 136432,
+                    "startOffset": 136859,
                     "endColumn": 91,
-                    "endOffset": 136519
+                    "endOffset": 136946
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10844,12 +10865,12 @@
             },
             {
                 "to": {
-                    "startLine": 1715,
+                    "startLine": 1723,
                     "startColumn": 4,
-                    "startOffset": 136524,
-                    "endLine": 1716,
+                    "startOffset": 136951,
+                    "endLine": 1724,
                     "endColumn": 12,
-                    "endOffset": 136619
+                    "endOffset": 137046
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10865,12 +10886,12 @@
             },
             {
                 "to": {
-                    "startLine": 1717,
+                    "startLine": 1725,
                     "startColumn": 4,
-                    "startOffset": 136624,
-                    "endLine": 1718,
+                    "startOffset": 137051,
+                    "endLine": 1726,
                     "endColumn": 12,
-                    "endOffset": 136731
+                    "endOffset": 137158
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10886,12 +10907,12 @@
             },
             {
                 "to": {
-                    "startLine": 1719,
+                    "startLine": 1727,
                     "startColumn": 4,
-                    "startOffset": 136736,
-                    "endLine": 1720,
+                    "startOffset": 137163,
+                    "endLine": 1728,
                     "endColumn": 12,
-                    "endOffset": 136845
+                    "endOffset": 137272
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10907,12 +10928,12 @@
             },
             {
                 "to": {
-                    "startLine": 1721,
+                    "startLine": 1729,
                     "startColumn": 4,
-                    "startOffset": 136850,
-                    "endLine": 1722,
+                    "startOffset": 137277,
+                    "endLine": 1730,
                     "endColumn": 12,
-                    "endOffset": 136961
+                    "endOffset": 137388
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10928,12 +10949,12 @@
             },
             {
                 "to": {
-                    "startLine": 1723,
+                    "startLine": 1731,
                     "startColumn": 4,
-                    "startOffset": 136966,
-                    "endLine": 1724,
+                    "startOffset": 137393,
+                    "endLine": 1732,
                     "endColumn": 12,
-                    "endOffset": 137077
+                    "endOffset": 137504
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10949,11 +10970,11 @@
             },
             {
                 "to": {
-                    "startLine": 1725,
+                    "startLine": 1733,
                     "startColumn": 4,
-                    "startOffset": 137082,
+                    "startOffset": 137509,
                     "endColumn": 93,
-                    "endOffset": 137171
+                    "endOffset": 137598
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10968,11 +10989,11 @@
             },
             {
                 "to": {
-                    "startLine": 1726,
+                    "startLine": 1734,
                     "startColumn": 4,
-                    "startOffset": 137176,
+                    "startOffset": 137603,
                     "endColumn": 113,
-                    "endOffset": 137285
+                    "endOffset": 137712
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -10987,11 +11008,11 @@
             },
             {
                 "to": {
-                    "startLine": 1727,
+                    "startLine": 1735,
                     "startColumn": 4,
-                    "startOffset": 137290,
+                    "startOffset": 137717,
                     "endColumn": 111,
-                    "endOffset": 137397
+                    "endOffset": 137824
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11006,12 +11027,12 @@
             },
             {
                 "to": {
-                    "startLine": 1728,
+                    "startLine": 1736,
                     "startColumn": 4,
-                    "startOffset": 137402,
-                    "endLine": 1729,
+                    "startOffset": 137829,
+                    "endLine": 1737,
                     "endColumn": 12,
-                    "endOffset": 137499
+                    "endOffset": 137926
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11027,12 +11048,12 @@
             },
             {
                 "to": {
-                    "startLine": 1730,
+                    "startLine": 1738,
                     "startColumn": 4,
-                    "startOffset": 137504,
-                    "endLine": 1731,
+                    "startOffset": 137931,
+                    "endLine": 1739,
                     "endColumn": 12,
-                    "endOffset": 137619
+                    "endOffset": 138046
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11048,12 +11069,12 @@
             },
             {
                 "to": {
-                    "startLine": 1732,
+                    "startLine": 1740,
                     "startColumn": 4,
-                    "startOffset": 137624,
-                    "endLine": 1733,
+                    "startOffset": 138051,
+                    "endLine": 1741,
                     "endColumn": 12,
-                    "endOffset": 137741
+                    "endOffset": 138168
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11069,11 +11090,11 @@
             },
             {
                 "to": {
-                    "startLine": 1734,
+                    "startLine": 1742,
                     "startColumn": 4,
-                    "startOffset": 137746,
+                    "startOffset": 138173,
                     "endColumn": 81,
-                    "endOffset": 137823
+                    "endOffset": 138250
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11088,11 +11109,11 @@
             },
             {
                 "to": {
-                    "startLine": 1735,
+                    "startLine": 1743,
                     "startColumn": 4,
-                    "startOffset": 137828,
+                    "startOffset": 138255,
                     "endColumn": 103,
-                    "endOffset": 137927
+                    "endOffset": 138354
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11107,11 +11128,11 @@
             },
             {
                 "to": {
-                    "startLine": 1736,
+                    "startLine": 1744,
                     "startColumn": 4,
-                    "startOffset": 137932,
+                    "startOffset": 138359,
                     "endColumn": 119,
-                    "endOffset": 138047
+                    "endOffset": 138474
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11126,11 +11147,11 @@
             },
             {
                 "to": {
-                    "startLine": 1737,
+                    "startLine": 1745,
                     "startColumn": 4,
-                    "startOffset": 138052,
+                    "startOffset": 138479,
                     "endColumn": 125,
-                    "endOffset": 138173
+                    "endOffset": 138600
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11145,11 +11166,11 @@
             },
             {
                 "to": {
-                    "startLine": 1738,
+                    "startLine": 1746,
                     "startColumn": 4,
-                    "startOffset": 138178,
+                    "startOffset": 138605,
                     "endColumn": 97,
-                    "endOffset": 138271
+                    "endOffset": 138698
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11164,11 +11185,11 @@
             },
             {
                 "to": {
-                    "startLine": 1739,
+                    "startLine": 1747,
                     "startColumn": 4,
-                    "startOffset": 138276,
+                    "startOffset": 138703,
                     "endColumn": 93,
-                    "endOffset": 138365
+                    "endOffset": 138792
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11183,11 +11204,11 @@
             },
             {
                 "to": {
-                    "startLine": 1740,
+                    "startLine": 1748,
                     "startColumn": 4,
-                    "startOffset": 138370,
+                    "startOffset": 138797,
                     "endColumn": 87,
-                    "endOffset": 138453
+                    "endOffset": 138880
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11202,11 +11223,11 @@
             },
             {
                 "to": {
-                    "startLine": 1741,
+                    "startLine": 1749,
                     "startColumn": 4,
-                    "startOffset": 138458,
+                    "startOffset": 138885,
                     "endColumn": 111,
-                    "endOffset": 138565
+                    "endOffset": 138992
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11221,11 +11242,11 @@
             },
             {
                 "to": {
-                    "startLine": 1742,
+                    "startLine": 1750,
                     "startColumn": 4,
-                    "startOffset": 138570,
+                    "startOffset": 138997,
                     "endColumn": 115,
-                    "endOffset": 138681
+                    "endOffset": 139108
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11240,11 +11261,11 @@
             },
             {
                 "to": {
-                    "startLine": 1743,
+                    "startLine": 1751,
                     "startColumn": 4,
-                    "startOffset": 138686,
+                    "startOffset": 139113,
                     "endColumn": 121,
-                    "endOffset": 138803
+                    "endOffset": 139230
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11259,11 +11280,11 @@
             },
             {
                 "to": {
-                    "startLine": 1744,
+                    "startLine": 1752,
                     "startColumn": 4,
-                    "startOffset": 138808,
+                    "startOffset": 139235,
                     "endColumn": 111,
-                    "endOffset": 138915
+                    "endOffset": 139342
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11278,12 +11299,12 @@
             },
             {
                 "to": {
-                    "startLine": 1745,
+                    "startLine": 1753,
                     "startColumn": 4,
-                    "startOffset": 138920,
-                    "endLine": 1747,
+                    "startOffset": 139347,
+                    "endLine": 1755,
                     "endColumn": 12,
-                    "endOffset": 139090
+                    "endOffset": 139517
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11299,11 +11320,11 @@
             },
             {
                 "to": {
-                    "startLine": 1748,
+                    "startLine": 1756,
                     "startColumn": 4,
-                    "startOffset": 139095,
+                    "startOffset": 139522,
                     "endColumn": 115,
-                    "endOffset": 139206
+                    "endOffset": 139633
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11318,11 +11339,11 @@
             },
             {
                 "to": {
-                    "startLine": 1749,
+                    "startLine": 1757,
                     "startColumn": 4,
-                    "startOffset": 139211,
+                    "startOffset": 139638,
                     "endColumn": 85,
-                    "endOffset": 139292
+                    "endOffset": 139719
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11337,11 +11358,11 @@
             },
             {
                 "to": {
-                    "startLine": 1750,
+                    "startLine": 1758,
                     "startColumn": 4,
-                    "startOffset": 139297,
+                    "startOffset": 139724,
                     "endColumn": 91,
-                    "endOffset": 139384
+                    "endOffset": 139811
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11356,12 +11377,12 @@
             },
             {
                 "to": {
-                    "startLine": 1751,
+                    "startLine": 1759,
                     "startColumn": 4,
-                    "startOffset": 139389,
-                    "endLine": 1752,
+                    "startOffset": 139816,
+                    "endLine": 1760,
                     "endColumn": 12,
-                    "endOffset": 139496
+                    "endOffset": 139923
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11377,12 +11398,12 @@
             },
             {
                 "to": {
-                    "startLine": 1753,
+                    "startLine": 1761,
                     "startColumn": 4,
-                    "startOffset": 139501,
-                    "endLine": 1754,
+                    "startOffset": 139928,
+                    "endLine": 1762,
                     "endColumn": 12,
-                    "endOffset": 139620
+                    "endOffset": 140047
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11398,11 +11419,11 @@
             },
             {
                 "to": {
-                    "startLine": 1755,
+                    "startLine": 1763,
                     "startColumn": 4,
-                    "startOffset": 139625,
+                    "startOffset": 140052,
                     "endColumn": 66,
-                    "endOffset": 139687
+                    "endOffset": 140114
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11417,12 +11438,12 @@
             },
             {
                 "to": {
-                    "startLine": 1756,
+                    "startLine": 1764,
                     "startColumn": 4,
-                    "startOffset": 139692,
-                    "endLine": 1757,
+                    "startOffset": 140119,
+                    "endLine": 1765,
                     "endColumn": 12,
-                    "endOffset": 139813
+                    "endOffset": 140240
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11438,11 +11459,11 @@
             },
             {
                 "to": {
-                    "startLine": 1758,
+                    "startLine": 1766,
                     "startColumn": 4,
-                    "startOffset": 139818,
+                    "startOffset": 140245,
                     "endColumn": 67,
-                    "endOffset": 139881
+                    "endOffset": 140308
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11457,12 +11478,12 @@
             },
             {
                 "to": {
-                    "startLine": 1759,
+                    "startLine": 1767,
                     "startColumn": 4,
-                    "startOffset": 139886,
-                    "endLine": 1760,
+                    "startOffset": 140313,
+                    "endLine": 1768,
                     "endColumn": 12,
-                    "endOffset": 140009
+                    "endOffset": 140436
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11478,12 +11499,12 @@
             },
             {
                 "to": {
-                    "startLine": 1761,
+                    "startLine": 1769,
                     "startColumn": 4,
-                    "startOffset": 140014,
-                    "endLine": 1762,
+                    "startOffset": 140441,
+                    "endLine": 1770,
                     "endColumn": 12,
-                    "endOffset": 140153
+                    "endOffset": 140580
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11499,12 +11520,12 @@
             },
             {
                 "to": {
-                    "startLine": 1763,
+                    "startLine": 1771,
                     "startColumn": 4,
-                    "startOffset": 140158,
-                    "endLine": 1764,
+                    "startOffset": 140585,
+                    "endLine": 1772,
                     "endColumn": 12,
-                    "endOffset": 140281
+                    "endOffset": 140708
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11520,11 +11541,11 @@
             },
             {
                 "to": {
-                    "startLine": 1765,
+                    "startLine": 1773,
                     "startColumn": 4,
-                    "startOffset": 140286,
+                    "startOffset": 140713,
                     "endColumn": 68,
-                    "endOffset": 140350
+                    "endOffset": 140777
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11539,11 +11560,11 @@
             },
             {
                 "to": {
-                    "startLine": 1766,
+                    "startLine": 1774,
                     "startColumn": 4,
-                    "startOffset": 140355,
+                    "startOffset": 140782,
                     "endColumn": 94,
-                    "endOffset": 140445
+                    "endOffset": 140872
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11558,11 +11579,11 @@
             },
             {
                 "to": {
-                    "startLine": 1767,
+                    "startLine": 1775,
                     "startColumn": 4,
-                    "startOffset": 140450,
+                    "startOffset": 140877,
                     "endColumn": 114,
-                    "endOffset": 140560
+                    "endOffset": 140987
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11577,11 +11598,11 @@
             },
             {
                 "to": {
-                    "startLine": 1768,
+                    "startLine": 1776,
                     "startColumn": 4,
-                    "startOffset": 140565,
+                    "startOffset": 140992,
                     "endColumn": 112,
-                    "endOffset": 140673
+                    "endOffset": 141100
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11596,11 +11617,11 @@
             },
             {
                 "to": {
-                    "startLine": 1769,
+                    "startLine": 1777,
                     "startColumn": 4,
-                    "startOffset": 140678,
+                    "startOffset": 141105,
                     "endColumn": 98,
-                    "endOffset": 140772
+                    "endOffset": 141199
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11615,11 +11636,11 @@
             },
             {
                 "to": {
-                    "startLine": 1770,
+                    "startLine": 1778,
                     "startColumn": 4,
-                    "startOffset": 140777,
+                    "startOffset": 141204,
                     "endColumn": 108,
-                    "endOffset": 140881
+                    "endOffset": 141308
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11634,11 +11655,11 @@
             },
             {
                 "to": {
-                    "startLine": 1771,
+                    "startLine": 1779,
                     "startColumn": 4,
-                    "startOffset": 140886,
+                    "startOffset": 141313,
                     "endColumn": 110,
-                    "endOffset": 140992
+                    "endOffset": 141419
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11653,11 +11674,11 @@
             },
             {
                 "to": {
-                    "startLine": 1772,
+                    "startLine": 1780,
                     "startColumn": 4,
-                    "startOffset": 140997,
+                    "startOffset": 141424,
                     "endColumn": 110,
-                    "endOffset": 141103
+                    "endOffset": 141530
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11672,11 +11693,11 @@
             },
             {
                 "to": {
-                    "startLine": 1773,
+                    "startLine": 1781,
                     "startColumn": 4,
-                    "startOffset": 141108,
+                    "startOffset": 141535,
                     "endColumn": 100,
-                    "endOffset": 141204
+                    "endOffset": 141631
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11691,11 +11712,11 @@
             },
             {
                 "to": {
-                    "startLine": 1774,
+                    "startLine": 1782,
                     "startColumn": 4,
-                    "startOffset": 141209,
+                    "startOffset": 141636,
                     "endColumn": 104,
-                    "endOffset": 141309
+                    "endOffset": 141736
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11710,11 +11731,11 @@
             },
             {
                 "to": {
-                    "startLine": 1775,
+                    "startLine": 1783,
                     "startColumn": 4,
-                    "startOffset": 141314,
+                    "startOffset": 141741,
                     "endColumn": 99,
-                    "endOffset": 141409
+                    "endOffset": 141836
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11729,12 +11750,12 @@
             },
             {
                 "to": {
-                    "startLine": 1776,
+                    "startLine": 1784,
                     "startColumn": 4,
-                    "startOffset": 141414,
-                    "endLine": 1777,
+                    "startOffset": 141841,
+                    "endLine": 1785,
                     "endColumn": 12,
-                    "endOffset": 141539
+                    "endOffset": 141966
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11750,11 +11771,11 @@
             },
             {
                 "to": {
-                    "startLine": 1778,
+                    "startLine": 1786,
                     "startColumn": 4,
-                    "startOffset": 141544,
+                    "startOffset": 141971,
                     "endColumn": 90,
-                    "endOffset": 141630
+                    "endOffset": 142057
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11769,11 +11790,11 @@
             },
             {
                 "to": {
-                    "startLine": 1779,
+                    "startLine": 1787,
                     "startColumn": 4,
-                    "startOffset": 141635,
+                    "startOffset": 142062,
                     "endColumn": 122,
-                    "endOffset": 141753
+                    "endOffset": 142180
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11788,11 +11809,11 @@
             },
             {
                 "to": {
-                    "startLine": 1780,
+                    "startLine": 1788,
                     "startColumn": 4,
-                    "startOffset": 141758,
+                    "startOffset": 142185,
                     "endColumn": 93,
-                    "endOffset": 141847
+                    "endOffset": 142274
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11807,12 +11828,12 @@
             },
             {
                 "to": {
-                    "startLine": 1781,
+                    "startLine": 1789,
                     "startColumn": 4,
-                    "startOffset": 141852,
-                    "endLine": 1782,
+                    "startOffset": 142279,
+                    "endLine": 1790,
                     "endColumn": 12,
-                    "endOffset": 141959
+                    "endOffset": 142386
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11828,11 +11849,11 @@
             },
             {
                 "to": {
-                    "startLine": 1783,
+                    "startLine": 1791,
                     "startColumn": 4,
-                    "startOffset": 141964,
+                    "startOffset": 142391,
                     "endColumn": 85,
-                    "endOffset": 142045
+                    "endOffset": 142472
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11847,11 +11868,11 @@
             },
             {
                 "to": {
-                    "startLine": 1784,
+                    "startLine": 1792,
                     "startColumn": 4,
-                    "startOffset": 142050,
+                    "startOffset": 142477,
                     "endColumn": 103,
-                    "endOffset": 142149
+                    "endOffset": 142576
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11866,11 +11887,11 @@
             },
             {
                 "to": {
-                    "startLine": 1785,
+                    "startLine": 1793,
                     "startColumn": 4,
-                    "startOffset": 142154,
+                    "startOffset": 142581,
                     "endColumn": 95,
-                    "endOffset": 142245
+                    "endOffset": 142672
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11885,11 +11906,11 @@
             },
             {
                 "to": {
-                    "startLine": 1786,
+                    "startLine": 1794,
                     "startColumn": 4,
-                    "startOffset": 142250,
+                    "startOffset": 142677,
                     "endColumn": 87,
-                    "endOffset": 142333
+                    "endOffset": 142760
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11904,12 +11925,12 @@
             },
             {
                 "to": {
-                    "startLine": 1787,
+                    "startLine": 1795,
                     "startColumn": 4,
-                    "startOffset": 142338,
-                    "endLine": 1788,
+                    "startOffset": 142765,
+                    "endLine": 1796,
                     "endColumn": 12,
-                    "endOffset": 142451
+                    "endOffset": 142878
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11925,12 +11946,12 @@
             },
             {
                 "to": {
-                    "startLine": 1789,
+                    "startLine": 1797,
                     "startColumn": 4,
-                    "startOffset": 142456,
-                    "endLine": 1790,
+                    "startOffset": 142883,
+                    "endLine": 1798,
                     "endColumn": 12,
-                    "endOffset": 142555
+                    "endOffset": 142982
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11946,12 +11967,12 @@
             },
             {
                 "to": {
-                    "startLine": 1791,
+                    "startLine": 1799,
                     "startColumn": 4,
-                    "startOffset": 142560,
-                    "endLine": 1792,
+                    "startOffset": 142987,
+                    "endLine": 1800,
                     "endColumn": 12,
-                    "endOffset": 142659
+                    "endOffset": 143086
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11967,12 +11988,12 @@
             },
             {
                 "to": {
-                    "startLine": 1793,
+                    "startLine": 1801,
                     "startColumn": 4,
-                    "startOffset": 142664,
-                    "endLine": 1794,
+                    "startOffset": 143091,
+                    "endLine": 1802,
                     "endColumn": 12,
-                    "endOffset": 142785
+                    "endOffset": 143212
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -11988,11 +12009,11 @@
             },
             {
                 "to": {
-                    "startLine": 1795,
+                    "startLine": 1803,
                     "startColumn": 4,
-                    "startOffset": 142790,
+                    "startOffset": 143217,
                     "endColumn": 87,
-                    "endOffset": 142873
+                    "endOffset": 143300
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12007,11 +12028,11 @@
             },
             {
                 "to": {
-                    "startLine": 1796,
+                    "startLine": 1804,
                     "startColumn": 4,
-                    "startOffset": 142878,
+                    "startOffset": 143305,
                     "endColumn": 107,
-                    "endOffset": 142981
+                    "endOffset": 143408
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12026,11 +12047,11 @@
             },
             {
                 "to": {
-                    "startLine": 1797,
+                    "startLine": 1805,
                     "startColumn": 4,
-                    "startOffset": 142986,
+                    "startOffset": 143413,
                     "endColumn": 99,
-                    "endOffset": 143081
+                    "endOffset": 143508
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12045,11 +12066,11 @@
             },
             {
                 "to": {
-                    "startLine": 1798,
+                    "startLine": 1806,
                     "startColumn": 4,
-                    "startOffset": 143086,
+                    "startOffset": 143513,
                     "endColumn": 89,
-                    "endOffset": 143171
+                    "endOffset": 143598
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12064,11 +12085,11 @@
             },
             {
                 "to": {
-                    "startLine": 1799,
+                    "startLine": 1807,
                     "startColumn": 4,
-                    "startOffset": 143176,
+                    "startOffset": 143603,
                     "endColumn": 109,
-                    "endOffset": 143281
+                    "endOffset": 143708
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12083,11 +12104,11 @@
             },
             {
                 "to": {
-                    "startLine": 1800,
+                    "startLine": 1808,
                     "startColumn": 4,
-                    "startOffset": 143286,
+                    "startOffset": 143713,
                     "endColumn": 83,
-                    "endOffset": 143365
+                    "endOffset": 143792
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12102,11 +12123,11 @@
             },
             {
                 "to": {
-                    "startLine": 1801,
+                    "startLine": 1809,
                     "startColumn": 4,
-                    "startOffset": 143370,
+                    "startOffset": 143797,
                     "endColumn": 101,
-                    "endOffset": 143467
+                    "endOffset": 143894
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12121,11 +12142,11 @@
             },
             {
                 "to": {
-                    "startLine": 1802,
+                    "startLine": 1810,
                     "startColumn": 4,
-                    "startOffset": 143472,
+                    "startOffset": 143899,
                     "endColumn": 83,
-                    "endOffset": 143551
+                    "endOffset": 143978
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12140,11 +12161,11 @@
             },
             {
                 "to": {
-                    "startLine": 1803,
+                    "startLine": 1811,
                     "startColumn": 4,
-                    "startOffset": 143556,
+                    "startOffset": 143983,
                     "endColumn": 53,
-                    "endOffset": 143605
+                    "endOffset": 144032
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12159,11 +12180,11 @@
             },
             {
                 "to": {
-                    "startLine": 1804,
+                    "startLine": 1812,
                     "startColumn": 4,
-                    "startOffset": 143610,
+                    "startOffset": 144037,
                     "endColumn": 63,
-                    "endOffset": 143669
+                    "endOffset": 144096
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12178,11 +12199,11 @@
             },
             {
                 "to": {
-                    "startLine": 1805,
+                    "startLine": 1813,
                     "startColumn": 4,
-                    "startOffset": 143674,
+                    "startOffset": 144101,
                     "endColumn": 105,
-                    "endOffset": 143775
+                    "endOffset": 144202
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12197,11 +12218,11 @@
             },
             {
                 "to": {
-                    "startLine": 1806,
+                    "startLine": 1814,
                     "startColumn": 4,
-                    "startOffset": 143780,
+                    "startOffset": 144207,
                     "endColumn": 109,
-                    "endOffset": 143885
+                    "endOffset": 144312
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12216,11 +12237,11 @@
             },
             {
                 "to": {
-                    "startLine": 1807,
+                    "startLine": 1815,
                     "startColumn": 4,
-                    "startOffset": 143890,
+                    "startOffset": 144317,
                     "endColumn": 83,
-                    "endOffset": 143969
+                    "endOffset": 144396
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12235,11 +12256,11 @@
             },
             {
                 "to": {
-                    "startLine": 1808,
+                    "startLine": 1816,
                     "startColumn": 4,
-                    "startOffset": 143974,
+                    "startOffset": 144401,
                     "endColumn": 119,
-                    "endOffset": 144089
+                    "endOffset": 144516
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\values\\values.xml",
@@ -12254,12 +12275,12 @@
             },
             {
                 "to": {
-                    "startLine": 1809,
+                    "startLine": 1817,
                     "startColumn": 4,
-                    "startOffset": 144094,
-                    "endLine": 1810,
+                    "startOffset": 144521,
+                    "endLine": 1818,
                     "endColumn": 12,
-                    "endOffset": 144189
+                    "endOffset": 144616
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values\\values.xml",
@@ -12275,12 +12296,12 @@
             },
             {
                 "to": {
-                    "startLine": 1811,
+                    "startLine": 1819,
                     "startColumn": 4,
-                    "startOffset": 144194,
-                    "endLine": 1817,
+                    "startOffset": 144621,
+                    "endLine": 1825,
                     "endColumn": 12,
-                    "endOffset": 144604
+                    "endOffset": 145031
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values\\values.xml",
@@ -12296,12 +12317,12 @@
             },
             {
                 "to": {
-                    "startLine": 1818,
+                    "startLine": 1826,
                     "startColumn": 4,
-                    "startOffset": 144609,
-                    "endLine": 1821,
+                    "startOffset": 145036,
+                    "endLine": 1829,
                     "endColumn": 12,
-                    "endOffset": 144811
+                    "endOffset": 145238
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values\\values.xml",
@@ -12317,12 +12338,12 @@
             },
             {
                 "to": {
-                    "startLine": 1822,
+                    "startLine": 1830,
                     "startColumn": 4,
-                    "startOffset": 144816,
-                    "endLine": 1824,
+                    "startOffset": 145243,
+                    "endLine": 1832,
                     "endColumn": 12,
-                    "endOffset": 144970
+                    "endOffset": 145397
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values\\values.xml",
@@ -12338,12 +12359,12 @@
             },
             {
                 "to": {
-                    "startLine": 1825,
+                    "startLine": 1833,
                     "startColumn": 4,
-                    "startOffset": 144975,
-                    "endLine": 1833,
+                    "startOffset": 145402,
+                    "endLine": 1841,
                     "endColumn": 12,
-                    "endOffset": 145535
+                    "endOffset": 145962
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values\\values.xml",
@@ -12359,12 +12380,12 @@
             },
             {
                 "to": {
-                    "startLine": 1834,
+                    "startLine": 1842,
                     "startColumn": 4,
-                    "startOffset": 145540,
-                    "endLine": 1839,
+                    "startOffset": 145967,
+                    "endLine": 1847,
                     "endColumn": 12,
-                    "endOffset": 145896
+                    "endOffset": 146323
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values\\values.xml",
@@ -12380,12 +12401,12 @@
             },
             {
                 "to": {
-                    "startLine": 1840,
+                    "startLine": 1848,
                     "startColumn": 4,
-                    "startOffset": 145901,
-                    "endLine": 1842,
+                    "startOffset": 146328,
+                    "endLine": 1850,
                     "endColumn": 12,
-                    "endOffset": 146025
+                    "endOffset": 146452
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values\\values.xml",
@@ -12401,12 +12422,12 @@
             },
             {
                 "to": {
-                    "startLine": 1843,
+                    "startLine": 1851,
                     "startColumn": 4,
-                    "startOffset": 146030,
-                    "endLine": 1851,
+                    "startOffset": 146457,
+                    "endLine": 1859,
                     "endColumn": 12,
-                    "endOffset": 146692
+                    "endOffset": 147119
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values\\values.xml",
@@ -12422,12 +12443,12 @@
             },
             {
                 "to": {
-                    "startLine": 1852,
+                    "startLine": 1860,
                     "startColumn": 4,
-                    "startOffset": 146697,
-                    "endLine": 1855,
+                    "startOffset": 147124,
+                    "endLine": 1863,
                     "endColumn": 12,
-                    "endOffset": 146872
+                    "endOffset": 147299
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values\\values.xml",
@@ -12443,12 +12464,12 @@
             },
             {
                 "to": {
-                    "startLine": 1856,
+                    "startLine": 1864,
                     "startColumn": 4,
-                    "startOffset": 146877,
-                    "endLine": 1863,
+                    "startOffset": 147304,
+                    "endLine": 1871,
                     "endColumn": 12,
-                    "endOffset": 147477
+                    "endOffset": 147904
                 },
                 "from": {
                     "file": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\values\\values.xml",
