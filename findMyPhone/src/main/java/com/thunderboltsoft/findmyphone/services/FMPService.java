@@ -332,6 +332,8 @@ public class FMPService extends Service {
                     mElapsedTime = System.nanoTime() - mStartTime;
                     isScreenOn = powerm.isScreenOn();
                 }
+
+                stopRingMyPhone();
             }
         });
 
@@ -371,6 +373,7 @@ public class FMPService extends Service {
                     } catch (IOException e) {
                     }
                 }
+                camera.startPreview();
                 p = camera.getParameters();
 
                 try {
@@ -401,6 +404,8 @@ public class FMPService extends Service {
                         camera.setParameters(p);
                         Thread.sleep(delayOff);
                     }
+
+                    stopRingMyPhone();
                 } catch (InterruptedException e) {
 
                 }
@@ -417,13 +422,6 @@ public class FMPService extends Service {
         } else {
             workerThread.start();
         }
-
-        // Calls to stop phone ringing
-        // Main thread will continue to even though another method is processed
-        // in another thread
-        // Therefore that is why stopRingMyPhone has a waiting while loop for
-        // the user to turn screen on
-        stopRingMyPhone();
 
         return true;
     }
