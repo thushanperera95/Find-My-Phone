@@ -73,5 +73,7 @@
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="status_running">RUNNING</string>
     <string name="status_stopped">STOPPED</string>
+    <string name="action_privacy_policy">Privacy Policy</string>
+    <string name="action_info">Info</string>
 
 </resources>

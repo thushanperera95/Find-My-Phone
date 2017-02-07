@@ -313,9 +313,6 @@ public class FMPService extends Service {
         workerThread = new Thread(new Runnable() {
             @Override
             public void run() {
-
-                Log.v("FMP", "Not in camera worker thread");
-
                 PowerManager powerm;
                 boolean isScreenOn = false;
 
@@ -411,6 +408,7 @@ public class FMPService extends Service {
                 }
 
                 // Releases the camera so that other apps can use the camera
+                camera.stopPreview();
                 camera.release();
             }
         });

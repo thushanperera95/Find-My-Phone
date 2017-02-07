@@ -24,12 +24,15 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -42,6 +45,7 @@ import com.karumi.dexter.listener.PermissionDeniedResponse;
 import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
 import com.revmob.RevMob;
+import com.revmob.RevMobAdsListener;
 import com.revmob.ads.banner.RevMobBanner;
 import com.thunderboltsoft.findmyphone.services.FMPService;
 import com.thunderboltsoft.ringmyphone.R;
@@ -99,12 +103,17 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
             sActionBar.setIcon(R.mipmap.ic_launcher);
         }
 
-//        mRevmob = RevMob.startWithListener(this, new RevMobAdsListener()) {
-//            @Override
-//            public void onRevMobSessionIsStarted() {
-//                showAdBanner();
-//            }
-//        }, "53140b72bc653cfa52882e01");
+        mRevmob = RevMob.startWithListener(this, new RevMobAdsListener() {
+            @Override
+            public void onRevMobSessionIsStarted() {
+                loadBanner();
+            }
+
+            @Override
+            public void onRevMobSessionNotStarted(String s) {
+                Log.i("Revmob", "Session failed to start");
+            }
+        }, "53140b72bc653cfa52882e01");
 
         // Opens a file called "PREFERENCES" that can only be used by our
         // application in order to store data such as settings
@@ -223,10 +232,30 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
             case R.id.action_info:
                 showHowtoDialog();
                 return true;
-//            case R.id.action_settings:
-//                Intent i = new Intent(getBaseContext(), SettingsActivity.class);
-//                startActivity(i);
-//                return true;
+            case R.id.action_privacy_policy:
+                AlertDialog.Builder alert = new AlertDialog.Builder(this);
+                alert.setTitle("Privacy Policy");
+
+                WebView wv = new WebView(this);
+                wv.loadUrl("http://thushanperera95.com/privacy_policy_android.html");
+                wv.setWebViewClient(new WebViewClient() {
+                    @Override
+                    public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                        view.loadUrl(url);
+
+                        return true;
+                    }
+                });
+
+                alert.setView(wv);
+                alert.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.dismiss();
+                    }
+                });
+                alert.show();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -331,16 +360,34 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         return false;
     }
 
+    public void loadBanner() {
+        mBannerAd = mRevmob.preLoadBanner(this, new RevMobAdsListener(){
+            @Override
+            public void onRevMobAdReceived() {
+                showAdBanner();
+                Log.i("RevMob","Banner Ready to be Displayed"); //At this point, the banner is ready to be displayed.
+            }
+            @Override
+            public void onRevMobAdNotReceived(String message) {
+                Log.i("RevMob","Banner Not Failed to Load");
+            }
+            @Override
+            public void onRevMobAdDisplayed() {
+                Log.i("RevMob","Banner Displayed");
+            }
+        });
+    }
+
     /**
      * Creates a banner ad and displays it
      */
     private void showAdBanner() {
-        mBannerAd = mRevmob.createBanner(this);
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 ViewGroup view = (ViewGroup) findViewById(R.id.bannerLayout);
                 view.addView(mBannerAd);
+                mBannerAd.show();
             }
         });
     }
