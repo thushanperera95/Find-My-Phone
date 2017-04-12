@@ -220,18 +220,57 @@ public class FMPService extends Service {
         // Checks if the received sms is the mCommand word
         if (commandReceived.equals(mCommand)) {
 
-            // Starts ringing the default ring tone and maximum volume
-            startRingMyPhone(context);
+            startFindMyPhoneTest(context);
 
-            if (PERMISSION_CAMERA_APPROVED) {
-                if (!startFlashLight(context)) {    // If flashlight not supported then stop ringing
-                    stopRingMyPhone();
-                }
-            }
+            // Starts ringing the default ring tone and maximum volume
+//            startRingMyPhone(context);
+//
+//            if (PERMISSION_CAMERA_APPROVED) {
+//                if (!startFlashLight(context)) {    // If flashlight not supported then stop ringing
+//                    stopRingMyPhone();
+//                }
+//            }
         }
 
         this.unregisterReceiver(this.mSMSReceiver);
         this.registerReceiver(this.mSMSReceiver, mIntentFilter);
+    }
+
+    private void startFindMyPhoneTest(Context context) {
+//        int streamMaxVolume;
+//
+//        // Retrieves audio service from the list of system services
+//        mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+//
+//        // Saves the current audio volume
+//        mCurrentVolume = mAudioManager.getStreamVolume(AudioManager.STREAM_RING);
+//
+//        // Retrieves the maximum volume supported by the stream
+//        streamMaxVolume = mAudioManager
+//                .getStreamMaxVolume(AudioManager.STREAM_RING);
+//
+//        // Sets the stream volume to the maximum
+//        mAudioManager.setStreamVolume(AudioManager.STREAM_RING, streamMaxVolume,
+//                AudioManager.FLAG_ALLOW_RINGER_MODES
+//                        | AudioManager.FLAG_PLAY_SOUND);
+//
+//        // Retrieves the default ring tone
+//        mDefaultRingtoneNotification = RingtoneManager
+//                .getDefaultUri(RingtoneManager.TYPE_RINGTONE);
+//
+//        // Plays the default ring tone
+//        mRingtone = RingtoneManager.getRingtone(context, mDefaultRingtoneNotification);
+//        mRingtone.play();
+//
+//        if (PERMISSION_CAMERA_APPROVED) {
+//            if (!startFlashLight(context)) {    // If flashlight not supported then stop ringing
+//                stopRingMyPhone();
+//            }
+//        }
+
+        Intent testIntet = new Intent();
+        testIntet.setAction("testingkaozgamer");
+        sendBroadcast(testIntet);
     }
 
     /*

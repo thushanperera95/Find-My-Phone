@@ -32,13 +32,24 @@
             </intent-filter>
         </activity>
 
+        <receiver android:name="com.thunderboltsoft.findmyphone.receivers.PopupBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="testingkaozgamer"></action>
+            </intent-filter>
+        </receiver>
+
         <service
             android:name="com.thunderboltsoft.findmyphone.services.FMPService"
             android:enabled="true" />
 
         <activity
             android:name="com.thunderboltsoft.findmyphone.activites.SettingsActivity"
-            android:label="@string/title_activity_settings"></activity>
+            android:label="@string/title_activity_settings">
+        </activity>
+
+        <activity
+            android:name="com.thunderboltsoft.findmyphone.activites.FindMyPhoneDialogActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog"></activity>
     </application>
 
 </manifest>
