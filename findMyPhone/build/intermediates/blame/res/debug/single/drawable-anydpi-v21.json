@@ -4,6 +4,14 @@
         "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_info_outline.xml"
     },
     {
+        "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\847d2ac6a005442eb7f4fe5c21f3ca3f4301e3b0\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\847d2ac6a005442eb7f4fe5c21f3ca3f4301e3b0\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+    },
+    {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_settings_white_24dp.xml",
         "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_settings_white_24dp.xml"
     }

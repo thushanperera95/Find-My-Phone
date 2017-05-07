@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:2:1-54:12
 	package
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:4:5-46
 		INJECTED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml
@@ -36,19 +36,20 @@ ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManif
 	android:name
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:10:22-64
 uses-sdk
-ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:12:5-77
-MERGED from [com.karumi:dexter:2.3.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:design:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
+ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:12:5-78
+MERGED from [com.karumi:dexter:2.3.1] C:\Users\Thushan\.android\build-cache\5be9d88753f4bc0592375842406e37138aafb884\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\Thushan\.android\build-cache\847d2ac6a005442eb7f4fe5c21f3ca3f4301e3b0\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Thushan\.android\build-cache\e51beb143746c303f6d1d5d607d8234879de8414\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Thushan\.android\build-cache\9a276377b8682ac2a087b7c06e2f36e46c463383\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Thushan\.android\build-cache\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Thushan\.android\build-cache\ab16f71635cbcc762e0716c0493a1a978779631a\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Thushan\.android\build-cache\cf51703f3d84a3466738f00e0ef12c02c616001d\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Thushan\.android\build-cache\fff63900c16f265acdb9c006af46dac2a9d8ffe1\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Thushan\.android\build-cache\bab245e3944b818a3fbb0d77e51e716217f616b6\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Thushan\.android\build-cache\32d25413e5ff5520e8a0e1aab51a0bae7943e58a\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Thushan\.android\build-cache\22b0045f9890d9bb54bab013e513b8781d3c2664\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Thushan\.android\build-cache\40546907745f5720729554a1f6a2e7555c25ba8c\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Thushan\.android\build-cache\922ed2a8f142e64c909323728184d0ace03a7b54\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:12:15-75
 	android:targetSdkVersion
@@ -64,28 +65,29 @@ ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManif
 	android:name
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:15:9-58
 application
-ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:18:5-42:19
-MERGED from [com.karumi:dexter:2.3.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:26:5-31:19
-MERGED from [com.android.support:design:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\design\24.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-compat:24.2.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
+ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:18:5-52:19
+MERGED from [com.karumi:dexter:2.3.1] C:\Users\Thushan\.android\build-cache\5be9d88753f4bc0592375842406e37138aafb884\output\AndroidManifest.xml:26:5-31:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\Thushan\.android\build-cache\847d2ac6a005442eb7f4fe5c21f3ca3f4301e3b0\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Thushan\.android\build-cache\9a276377b8682ac2a087b7c06e2f36e46c463383\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Thushan\.android\build-cache\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Thushan\.android\build-cache\ab16f71635cbcc762e0716c0493a1a978779631a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Thushan\.android\build-cache\cf51703f3d84a3466738f00e0ef12c02c616001d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Thushan\.android\build-cache\fff63900c16f265acdb9c006af46dac2a9d8ffe1\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Thushan\.android\build-cache\bab245e3944b818a3fbb0d77e51e716217f616b6\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Thushan\.android\build-cache\32d25413e5ff5520e8a0e1aab51a0bae7943e58a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Thushan\.android\build-cache\22b0045f9890d9bb54bab013e513b8781d3c2664\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Thushan\.android\build-cache\40546907745f5720729554a1f6a2e7555c25ba8c\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Thushan\.android\build-cache\922ed2a8f142e64c909323728184d0ace03a7b54\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:22:9-41
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:21:9-41
 	android:allowBackup
-		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:20:9-35
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:19:9-35
 	android:icon
-		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:21:9-43
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:20:9-43
 	android:theme
-		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:23:9-47
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:22:9-47
 	tools:replace
-		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:19:9-38
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:23:9-38
 activity#com.thunderboltsoft.findmyphone.activites.FMPActivity
 ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:24:9-33:20
 	android:screenOrientation
@@ -104,23 +106,56 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:31:17-77
 	android:name
 		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:31:27-74
+receiver#com.thunderboltsoft.findmyphone.receivers.PopupBroadcastReceiver
+ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:35:9-39:20
+	android:name
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:35:19-98
+intent-filter#testingkaozgamer
+ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:36:13-38:29
+action#testingkaozgamer
+ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:37:17-66
+	android:name
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:37:25-56
 service#com.thunderboltsoft.findmyphone.services.FMPService
-ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:35:9-37:38
+ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:41:9-43:38
 	android:enabled
-		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:37:13-35
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:43:13-35
 	android:name
-		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:36:13-79
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:42:13-79
 activity#com.thunderboltsoft.findmyphone.activites.SettingsActivity
-ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:39:9-41:72
+ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:45:9-47:72
 	android:label
-		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:41:13-60
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:47:13-60
 	android:name
-		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:40:13-86
-activity#com.karumi.dexter.DexterActivity
-ADDED from [com.karumi:dexter:2.3.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:27:9-30:56
-	android:launchMode
-		ADDED from [com.karumi:dexter:2.3.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:29:13-44
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:46:13-86
+activity#com.thunderboltsoft.findmyphone.activites.FindMyPhoneDialogActivity
+ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:49:9-51:65
 	android:theme
-		ADDED from [com.karumi:dexter:2.3.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:30:13-53
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:51:13-53
 	android:name
-		ADDED from [com.karumi:dexter:2.3.1] D:\Development\Projects\FindMyPhone\findMyPhone\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:28:13-60
+		ADDED from D:\Development\Projects\FindMyPhone\findMyPhone\src\main\AndroidManifest.xml:50:13-95
+activity#com.karumi.dexter.DexterActivity
+ADDED from [com.karumi:dexter:2.3.1] C:\Users\Thushan\.android\build-cache\5be9d88753f4bc0592375842406e37138aafb884\output\AndroidManifest.xml:27:9-30:56
+	android:launchMode
+		ADDED from [com.karumi:dexter:2.3.1] C:\Users\Thushan\.android\build-cache\5be9d88753f4bc0592375842406e37138aafb884\output\AndroidManifest.xml:29:13-44
+	android:theme
+		ADDED from [com.karumi:dexter:2.3.1] C:\Users\Thushan\.android\build-cache\5be9d88753f4bc0592375842406e37138aafb884\output\AndroidManifest.xml:30:13-53
+	android:name
+		ADDED from [com.karumi:dexter:2.3.1] C:\Users\Thushan\.android\build-cache\5be9d88753f4bc0592375842406e37138aafb884\output\AndroidManifest.xml:28:13-60
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\Thushan\.android\build-cache\847d2ac6a005442eb7f4fe5c21f3ca3f4301e3b0\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Thushan\.android\build-cache\e51beb143746c303f6d1d5d607d8234879de8414\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Thushan\.android\build-cache\9a276377b8682ac2a087b7c06e2f36e46c463383\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Thushan\.android\build-cache\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Thushan\.android\build-cache\ab16f71635cbcc762e0716c0493a1a978779631a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Thushan\.android\build-cache\cf51703f3d84a3466738f00e0ef12c02c616001d\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Thushan\.android\build-cache\fff63900c16f265acdb9c006af46dac2a9d8ffe1\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Thushan\.android\build-cache\bab245e3944b818a3fbb0d77e51e716217f616b6\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Thushan\.android\build-cache\32d25413e5ff5520e8a0e1aab51a0bae7943e58a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Thushan\.android\build-cache\22b0045f9890d9bb54bab013e513b8781d3c2664\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Thushan\.android\build-cache\40546907745f5720729554a1f6a2e7555c25ba8c\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Thushan\.android\build-cache\922ed2a8f142e64c909323728184d0ace03a7b54\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Thushan\.android\build-cache\847d2ac6a005442eb7f4fe5c21f3ca3f4301e3b0\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Thushan\.android\build-cache\847d2ac6a005442eb7f4fe5c21f3ca3f4301e3b0\output\AndroidManifest.xml:26:9-47

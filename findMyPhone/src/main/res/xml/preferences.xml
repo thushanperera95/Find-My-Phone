@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditTextPreference android:title="Your Name"
+    <EditTextPreference
+        android:title="Your Name"
         android:key="username"
         android:summary="Please provide your username" />
-    <CheckBoxPreference android:title="Application Updates"
+    <CheckBoxPreference
+        android:title="Application Updates"
         android:defaultValue="false"
         android:summary="This option if selected will allow the application to check for latest versions."
         android:key="applicationUpdates" />

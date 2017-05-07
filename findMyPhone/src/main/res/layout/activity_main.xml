@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/input_layout_password"
             android:text="@string/set_button"
-            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" />
 
         <TextView
             android:id="@+id/txtViewServiceStatus"

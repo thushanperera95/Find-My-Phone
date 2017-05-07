@@ -1,5 +1,4 @@
-<menu
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
@@ -7,13 +6,13 @@
         android:orderInCategory="100"
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_info_outline"
-        android:title="@string/action_info"/>
+        android:title="@string/action_info" />
 
     <item
         android:id="@+id/action_privacy_policy"
         android:orderInCategory="90"
         app:showAsAction="never"
-        android:title="@string/action_privacy_policy"/>
+        android:title="@string/action_privacy_policy" />
     <!--android:icon="@drawable/ic_info_outline"-->
 
 </menu>

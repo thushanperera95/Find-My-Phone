@@ -14,9 +14,6 @@
 
 package com.thunderboltsoft.findmyphone.services;
 
-import java.io.IOException;
-import java.util.Locale;
-
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -24,7 +21,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.pm.PackageManager;
 import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
 import android.hardware.Camera.Parameters;
@@ -39,10 +35,12 @@ import android.os.PowerManager;
 import android.support.v4.app.NotificationCompat;
 import android.telephony.SmsMessage;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.thunderboltsoft.findmyphone.activites.FMPActivity;
 import com.thunderboltsoft.ringmyphone.R;
+
+import java.io.IOException;
+import java.util.Locale;
 
 public class FMPService extends Service {
 

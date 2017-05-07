@@ -83,15 +83,15 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        stopFMPService();
-
-        Dexter.initialize(getApplication());
-
         mBtnStop = (Button) findViewById(R.id.stop_button);
         mBtnStart = (Button) findViewById(R.id.start_button);
         mBtnSet = (Button) findViewById(R.id.set_button);
         mEditTxtFindPassword = (EditText) findViewById(R.id.command);
         mTxtStatus = (TextView) findViewById(R.id.txtStatus);
+
+        stopFMPService();
+
+        Dexter.initialize(getApplication());
 
         Toolbar myToolBar = (Toolbar) findViewById(R.id.toolbar);
 
@@ -121,81 +121,7 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
         retrieveLastCommand();
 
-        Dexter.checkPermissionsOnSameThread(new MultiplePermissionsListener() {
-            @Override
-            public void onPermissionsChecked(MultiplePermissionsReport report) {
-
-                List<PermissionDeniedResponse> deniedPermissions = report.getDeniedPermissionResponses();
-                for (PermissionDeniedResponse deniedPermission : deniedPermissions) {
-                    if (deniedPermission.getPermissionName().equals(Manifest.permission.RECEIVE_SMS)) {
-                        if (deniedPermission.isPermanentlyDenied()) {
-                            String message = "Receive SMS is a required permission for the core functionality of this app!\nWithout this the app is unable to function as intended.\n\nPlease use the Application Manager under System Settings and allow the 'SMS' permission for this app.";
-
-                            new AlertDialog.Builder(FMPActivity.this)
-                                    .setTitle("Heads up")
-                                    .setMessage(message)
-                                    .setPositiveButton("Ok",
-                                            new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int which) {
-                                                    // Finish activity
-                                                    finish();
-                                                }
-                                            })
-                                    .setNegativeButton("Settings",
-                                            new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int which) {
-                                                    // Finish activity
-                                                    startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
-                                                    finish();
-                                                }
-                                            })
-                                    .setCancelable(false)
-                                    .show();
-                        } else {
-                            String message = "Receive SMS is a required permission for the core functionality of this app!\n" +
-                                    "Without this the app is unable to function as intended.\n\n" +
-                                    "Please re-run this app and allow this permission.";
-
-                            new AlertDialog.Builder(FMPActivity.this)
-                                    .setTitle("Heads up")
-                                    .setMessage(message)
-                                    .setPositiveButton("Ok",
-                                            new DialogInterface.OnClickListener() {
-                                                public void onClick(DialogInterface dialog, int which) {
-                                                    // Finish activity
-                                                    finish();
-                                                }
-                                            })
-                                    .setCancelable(false)
-                                    .show();
-                        }
-                    } else if (deniedPermission.getPermissionName().equals(Manifest.permission.CAMERA)) {
-                        Toast.makeText(getApplicationContext(), "Flashlight will not flash when trying to locate your phone", Toast.LENGTH_SHORT).show();
-                        mCameraPermissionCheck = false;
-                    }
-                }
-
-                boolean proceed = false;
-
-                List<PermissionGrantedResponse> grantedPermissions = report.getGrantedPermissionResponses();
-                for (PermissionGrantedResponse grantedPermission : grantedPermissions) {
-                    if (grantedPermission.getPermissionName().equals(Manifest.permission.CAMERA)) {
-                        mCameraPermissionCheck = true;
-                    } else if (grantedPermission.getPermissionName().equals(Manifest.permission.RECEIVE_SMS)) {
-                        proceed = true;
-                    }
-                }
-
-                if (proceed) {
-                    startFMPService();
-                }
-            }
-
-            @Override
-            public void onPermissionRationaleShouldBeShown(List<com.karumi.dexter.listener.PermissionRequest> permissions, final PermissionToken token) {
-                token.continuePermissionRequest(); // Just continue I guess, I dunno wtf else to do here
-            }
-        }, Manifest.permission.RECEIVE_SMS, Manifest.permission.CAMERA);
+        checkPermissions();
 
         setUpListeners();
     }
@@ -304,6 +230,8 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
 
         // Saves the mFindPassword by writing it to the PREFERENCES file
         mPreferences.edit().putString("command", mFindPassword).apply();
+
+        mPreferences.edit().apply();
     }
 
     /**
@@ -361,19 +289,21 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
     }
 
     public void loadBanner() {
-        mBannerAd = mRevmob.preLoadBanner(this, new RevMobAdsListener(){
+        mBannerAd = mRevmob.preLoadBanner(this, new RevMobAdsListener() {
             @Override
             public void onRevMobAdReceived() {
                 showAdBanner();
-                Log.i("RevMob","Banner Ready to be Displayed"); //At this point, the banner is ready to be displayed.
+                Log.i("RevMob", "Banner Ready to be Displayed"); //At this point, the banner is ready to be displayed.
             }
+
             @Override
             public void onRevMobAdNotReceived(String message) {
-                Log.i("RevMob","Banner Not Failed to Load");
+                Log.i("RevMob", "Banner Not Failed to Load");
             }
+
             @Override
             public void onRevMobAdDisplayed() {
-                Log.i("RevMob","Banner Displayed");
+                Log.i("RevMob", "Banner Displayed");
             }
         });
     }
@@ -412,5 +342,83 @@ public class FMPActivity extends AppCompatActivity implements OnClickListener {
         }
 
         mEditTxtFindPassword.setText(mFindPassword);
+    }
+
+    private void checkPermissions() {
+        Dexter.checkPermissionsOnSameThread(new MultiplePermissionsListener() {
+            @Override
+            public void onPermissionsChecked(MultiplePermissionsReport report) {
+
+                List<PermissionDeniedResponse> deniedPermissions = report.getDeniedPermissionResponses();
+                for (PermissionDeniedResponse deniedPermission : deniedPermissions) {
+                    if (deniedPermission.getPermissionName().equals(Manifest.permission.RECEIVE_SMS)) {
+                        if (deniedPermission.isPermanentlyDenied()) {
+                            String message = "Receive SMS is a required permission for the core functionality of this app!\nWithout this the app is unable to function as intended.\n\nPlease use the Application Manager under System Settings and allow the 'SMS' permission for this app.";
+
+                            new AlertDialog.Builder(FMPActivity.this)
+                                    .setTitle("Heads up")
+                                    .setMessage(message)
+                                    .setPositiveButton("Ok",
+                                            new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    // Finish activity
+                                                    finish();
+                                                }
+                                            })
+                                    .setNegativeButton("Settings",
+                                            new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    // Finish activity
+                                                    startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                                                    finish();
+                                                }
+                                            })
+                                    .setCancelable(false)
+                                    .show();
+                        } else {
+                            String message = "Receive SMS is a required permission for the core functionality of this app!\n" +
+                                    "Without this the app is unable to function as intended.\n\n" +
+                                    "Please re-run this app and allow this permission.";
+
+                            new AlertDialog.Builder(FMPActivity.this)
+                                    .setTitle("Heads up")
+                                    .setMessage(message)
+                                    .setPositiveButton("Ok",
+                                            new DialogInterface.OnClickListener() {
+                                                public void onClick(DialogInterface dialog, int which) {
+                                                    // Finish activity
+                                                    finish();
+                                                }
+                                            })
+                                    .setCancelable(false)
+                                    .show();
+                        }
+                    } else if (deniedPermission.getPermissionName().equals(Manifest.permission.CAMERA)) {
+                        Toast.makeText(getApplicationContext(), "Flashlight will not flash when trying to locate your phone", Toast.LENGTH_SHORT).show();
+                        mCameraPermissionCheck = false;
+                    }
+                }
+
+                boolean proceed = false;
+
+                List<PermissionGrantedResponse> grantedPermissions = report.getGrantedPermissionResponses();
+                for (PermissionGrantedResponse grantedPermission : grantedPermissions) {
+                    if (grantedPermission.getPermissionName().equals(Manifest.permission.CAMERA)) {
+                        mCameraPermissionCheck = true;
+                    } else if (grantedPermission.getPermissionName().equals(Manifest.permission.RECEIVE_SMS)) {
+                        proceed = true;
+                    }
+                }
+
+                if (proceed) {
+                    startFMPService();
+                }
+            }
+
+            @Override
+            public void onPermissionRationaleShouldBeShown(List<com.karumi.dexter.listener.PermissionRequest> permissions, final PermissionToken token) {
+                token.continuePermissionRequest(); // Just continue I guess, I dunno wtf else to do here
+            }
+        }, Manifest.permission.RECEIVE_SMS, Manifest.permission.CAMERA);
     }
 }

@@ -1,42 +1,46 @@
 [
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
-        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
-        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_tint_edittext.xml"
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\\output\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
-        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_tint_default.xml"
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\\output\\res\\color-v23\\abc_tint_default.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
-        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_tint_switch_track.xml"
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\\output\\res\\color-v23\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\\output\\res\\color-v23\\abc_btn_colored_text_material.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
-        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_tint_spinner.xml"
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\\output\\res\\color-v23\\abc_tint_spinner.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
-        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_tint_switch_thumb.xml"
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_color_highlight_material.xml"
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\\output\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
-        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_tint_seek_thumb.xml"
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
-        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color-v23\\abc_tint_btn_checkable.xml"
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\c6b9a8425e06a4288b5207c2c55bc83e92283ee7\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
-        "source": "D:\\Development\\Projects\\FindMyPhone\\findMyPhone\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\color-v23\\design_tint_password_toggle.xml"
+        "source": "C:\\Users\\Thushan\\.android\\build-cache\\847d2ac6a005442eb7f4fe5c21f3ca3f4301e3b0\\output\\res\\color-v23\\design_tint_password_toggle.xml"
     }
 ]

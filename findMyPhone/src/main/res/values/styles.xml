@@ -31,9 +31,18 @@
         <item name="android:background">?colorPrimary</item>
     </style>
 
-    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" >
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:background">@android:color/white</item>
         <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">#FFC107</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <!-- Used for the background -->
+        <item name="android:background">#4CAF50</item>
     </style>
 
 </resources>

@@ -6,27 +6,33 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-/**
- * Created by Thushan on 12-Apr-17.
- */
+import com.thunderboltsoft.ringmyphone.R;
 
 public class FindMyPhoneDialogActivity extends Activity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder
-                .setTitle("Find My Phone")
-                .setMessage("Find My Phone service is currently active")
-                .setCancelable(false)
-                .setPositiveButton("Found My Phone!", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.cancel();
-                    }
-                });
-        AlertDialog alert = builder.create();
-        alert.show();
+        AlertDialog.Builder builder = null;
+        builder = new AlertDialog.Builder(this, R.style.MyAlertDialogStyle);
+        builder.setTitle("AppCompatDialog");
+        builder.setMessage("Lorem ipsum dolor...");
+        builder.setCancelable(true);
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        });
+        builder.create().show();
     }
+
+
 }
